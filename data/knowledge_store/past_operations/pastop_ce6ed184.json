@@ -1,0 +1,93 @@
+{
+  "company_name": "キョウワホーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 9562,
+      "profile_access": 1537,
+      "link_clicks": 16,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1523
+    },
+    {
+      "month": "2508",
+      "reach": 10327,
+      "profile_access": 1633,
+      "link_clicks": 24,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1700
+    },
+    {
+      "month": "2509",
+      "reach": 11081,
+      "profile_access": 1444,
+      "link_clicks": 29,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1844
+    },
+    {
+      "month": "2510",
+      "reach": 11041,
+      "profile_access": 1439,
+      "link_clicks": 18,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1976
+    },
+    {
+      "month": "2511",
+      "reach": 9853,
+      "profile_access": 1348,
+      "link_clicks": 26,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2116
+    },
+    {
+      "month": "2512",
+      "reach": 11337,
+      "profile_access": 1063,
+      "link_clicks": 25,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2252
+    },
+    {
+      "month": "2601",
+      "reach": 12352,
+      "profile_access": 1515,
+      "link_clicks": 39,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2445
+    },
+    {
+      "month": "2602",
+      "reach": 18129,
+      "profile_access": 1577,
+      "link_clicks": 32,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2609
+    }
+  ],
+  "source_file": "【キョウワホーム様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_ce6ed184",
+  "created_at": "2026-03-21T17:46:25.210636"
+}

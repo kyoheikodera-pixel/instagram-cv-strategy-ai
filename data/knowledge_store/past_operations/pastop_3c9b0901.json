@@ -1,0 +1,93 @@
+{
+  "company_name": "ウィズホーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 13226,
+      "profile_access": 1953,
+      "link_clicks": 57,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3085
+    },
+    {
+      "month": "2508",
+      "reach": 26565,
+      "profile_access": 1615,
+      "link_clicks": 35,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3243
+    },
+    {
+      "month": "2509",
+      "reach": 33419,
+      "profile_access": 1689,
+      "link_clicks": 102,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3373
+    },
+    {
+      "month": "2510",
+      "reach": 30165,
+      "profile_access": 1695,
+      "link_clicks": 107,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3547
+    },
+    {
+      "month": "2511",
+      "reach": 41947,
+      "profile_access": 2047,
+      "link_clicks": 126,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3698
+    },
+    {
+      "month": "2512",
+      "reach": 44489,
+      "profile_access": 4265,
+      "link_clicks": 124,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3987
+    },
+    {
+      "month": "2601",
+      "reach": 74570,
+      "profile_access": 2569,
+      "link_clicks": 156,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4221
+    },
+    {
+      "month": "2602",
+      "reach": 121257,
+      "profile_access": 2377,
+      "link_clicks": 179,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4459
+    }
+  ],
+  "source_file": "【ウィズホーム様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_3c9b0901",
+  "created_at": "2026-03-21T17:46:24.637211"
+}

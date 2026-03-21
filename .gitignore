@@ -1,6 +1,5 @@
 .env
 __pycache__/
 *.pyc
-data/knowledge_store/
 imports/
 .streamlit/secrets.toml

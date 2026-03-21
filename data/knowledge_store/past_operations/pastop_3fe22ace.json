@@ -1,0 +1,73 @@
+{
+  "company_name": "レモンホーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2509~2602",
+  "notes": "KPIシートから自動取り込み。6ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2509",
+      "reach": 7200,
+      "profile_access": 1265,
+      "link_clicks": 79,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2808
+    },
+    {
+      "month": "2510",
+      "reach": 7606,
+      "profile_access": 1525,
+      "link_clicks": 78,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2926
+    },
+    {
+      "month": "2511",
+      "reach": 6970,
+      "profile_access": 1308,
+      "link_clicks": 77,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3055
+    },
+    {
+      "month": "2512",
+      "reach": 7724,
+      "profile_access": 1370,
+      "link_clicks": 71,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3160
+    },
+    {
+      "month": "2601",
+      "reach": 7921,
+      "profile_access": 1630,
+      "link_clicks": 104,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3269
+    },
+    {
+      "month": "2602",
+      "reach": 7917,
+      "profile_access": 1592,
+      "link_clicks": 65,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3387
+    }
+  ],
+  "source_file": "【レモンホーム様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_3fe22ace",
+  "created_at": "2026-03-21T17:46:29.169334"
+}

@@ -1,0 +1,96 @@
+{
+  "company_name": "鈴木屋木材",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 14344,
+      "profile_access": 1247,
+      "link_clicks": 19,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4476
+    },
+    {
+      "month": "2508",
+      "reach": 54422,
+      "profile_access": 2167,
+      "link_clicks": 24,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4685
+    },
+    {
+      "month": "2509",
+      "reach": 35424,
+      "profile_access": 951,
+      "link_clicks": 6,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4677
+    },
+    {
+      "month": "2510",
+      "reach": 26888,
+      "profile_access": 1573,
+      "link_clicks": 15,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4822
+    },
+    {
+      "month": "2511",
+      "reach": 9661,
+      "profile_access": 1943,
+      "link_clicks": 20,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 5036
+    },
+    {
+      "month": "2512",
+      "reach": 10778,
+      "profile_access": 1669,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 5214
+    },
+    {
+      "month": "2601",
+      "reach": 11952,
+      "profile_access": 2387,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5416
+    },
+    {
+      "month": "2602",
+      "reach": 21338,
+      "profile_access": 2345,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5629
+    }
+  ],
+  "source_file": "【鈴木屋木材】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [
+    "cvが全月同じ値(1)。目標値をコピーした可能性",
+    "cvの6/6月が同じ値(1)。データの正確性を確認"
+  ],
+  "id": "pastop_70eb57c5",
+  "created_at": "2026-03-21T17:46:32.065786"
+}

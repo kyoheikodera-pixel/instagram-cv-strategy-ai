@@ -1,0 +1,41 @@
+{
+  "id": "case_zerohome",
+  "company_name": "ゼロホーム様",
+  "area": "不明",
+  "plan_history": "アドバンス",
+  "monthly_data": [
+    {
+      "month": "直近3ヶ月平均",
+      "plan": "アドバンス",
+      "reach": 388941,
+      "profile_access": 2455,
+      "profile_access_rate": 0.63,
+      "link_clicks": 39,
+      "link_click_rate": 1.5,
+      "cv": 3,
+      "cv_rate": 7.69
+    }
+  ],
+  "targets": {
+    "3ヶ月後": {
+      "reach": 400000,
+      "profile_access": 2636,
+      "profile_access_rate": 0.659,
+      "link_clicks": 58,
+      "link_click_rate": 2.2,
+      "cv": 5,
+      "cv_rate": 8.5
+    },
+    "6ヶ月後": {
+      "reach": 426417,
+      "profile_access": 2857,
+      "profile_access_rate": 0.67,
+      "link_clicks": 80,
+      "link_click_rate": 2.5,
+      "cv": 8,
+      "cv_rate": 10.0
+    }
+  },
+  "key_tactics": [],
+  "notes": "戦略設計のテンプレート事例。ファネル逆算モデルの原型。"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tactic_qa_box",
+  "target_metric": "リンククリック率",
+  "tactic_name": "質問箱でユーザー巻き込み",
+  "description": "質問箱を使ってアクティブユーザーを増やし、ストーリーズ閲覧者を増加させる",
+  "plan_type": [
+    "スタンダード",
+    "アドバンス"
+  ],
+  "category": "ストーリーズ",
+  "expected_impact": "中",
+  "source": "ナレッジ"
+}

@@ -1,0 +1,43 @@
+{
+  "company_name": "リクシル様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2512~2602",
+  "notes": "KPIシートから自動取り込み。3ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2512",
+      "reach": 0,
+      "profile_access": 545,
+      "link_clicks": 12,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2386
+    },
+    {
+      "month": "2601",
+      "reach": 0,
+      "profile_access": 1689,
+      "link_clicks": 23,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2612
+    },
+    {
+      "month": "2602",
+      "reach": 0,
+      "profile_access": 1734,
+      "link_clicks": 10,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2824
+    }
+  ],
+  "source_file": "【リクシル様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_bad9ad5e",
+  "created_at": "2026-03-21T17:46:28.940276"
+}

@@ -1,0 +1,83 @@
+{
+  "company_name": "HOUSE TREATMENT様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2601",
+  "notes": "KPIシートから自動取り込み。7ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 12118,
+      "profile_access": 515,
+      "link_clicks": 3,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 8882
+    },
+    {
+      "month": "2508",
+      "reach": 13821,
+      "profile_access": 1418,
+      "link_clicks": 16,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 8982
+    },
+    {
+      "month": "2509",
+      "reach": 12938,
+      "profile_access": 1443,
+      "link_clicks": 29,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 9047
+    },
+    {
+      "month": "2510",
+      "reach": 12000,
+      "profile_access": 1246,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2852
+    },
+    {
+      "month": "2511",
+      "reach": 10199,
+      "profile_access": 1663,
+      "link_clicks": 26,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 9142
+    },
+    {
+      "month": "2512",
+      "reach": 12744,
+      "profile_access": 1083,
+      "link_clicks": 23,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 9242
+    },
+    {
+      "month": "2601",
+      "reach": 12129,
+      "profile_access": 1520,
+      "link_clicks": 34,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 9411
+    }
+  ],
+  "source_file": "【HOUSE TREATMENT様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_d1375054",
+  "created_at": "2026-03-21T17:46:23.008320"
+}

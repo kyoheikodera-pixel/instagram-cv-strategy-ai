@@ -1,0 +1,13 @@
+{
+  "id": "tactic_save_post",
+  "target_metric": "リーチ",
+  "tactic_name": "保存版投稿（狭小住宅・お客様の声）",
+  "description": "保存数を稼ぐ投稿で発見タブ掲載を狙う。狭小住宅×お客様の声の組み合わせが効果的",
+  "plan_type": [
+    "スタンダード",
+    "アドバンス"
+  ],
+  "category": "フィード",
+  "expected_impact": "高",
+  "source": "アールグラフ様事例（保存数13件で年間最多）"
+}

@@ -1,0 +1,23 @@
+{
+  "company_name": "ハウスフリーダム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2602~2602",
+  "notes": "KPIシートから自動取り込み。1ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2602",
+      "reach": 31065,
+      "profile_access": 3589,
+      "link_clicks": 122,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 11442
+    }
+  ],
+  "source_file": "【ハウスフリーダム様】Instagram月次レポート_KPI表 _.xlsx",
+  "import_errors": [],
+  "id": "pastop_3816b435",
+  "created_at": "2026-03-21T17:46:27.554758"
+}

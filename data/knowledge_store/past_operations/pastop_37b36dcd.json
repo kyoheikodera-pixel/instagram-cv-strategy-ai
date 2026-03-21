@@ -1,0 +1,93 @@
+{
+  "company_name": "むぎくら様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 22990,
+      "profile_access": 2321,
+      "link_clicks": 114,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5461
+    },
+    {
+      "month": "2508",
+      "reach": 46068,
+      "profile_access": 2029,
+      "link_clicks": 29,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5587
+    },
+    {
+      "month": "2509",
+      "reach": 48713,
+      "profile_access": 2146,
+      "link_clicks": 111,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5608
+    },
+    {
+      "month": "2510",
+      "reach": 70107,
+      "profile_access": 2574,
+      "link_clicks": 153,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5647
+    },
+    {
+      "month": "2511",
+      "reach": 28258,
+      "profile_access": 2149,
+      "link_clicks": 137,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5760
+    },
+    {
+      "month": "2512",
+      "reach": 32219,
+      "profile_access": 1915,
+      "link_clicks": 83,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5873
+    },
+    {
+      "month": "2601",
+      "reach": 23394,
+      "profile_access": 2671,
+      "link_clicks": 223,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6094
+    },
+    {
+      "month": "2602",
+      "reach": 24387,
+      "profile_access": 2490,
+      "link_clicks": 148,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6227
+    }
+  ],
+  "source_file": "【むぎくら様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_37b36dcd",
+  "created_at": "2026-03-21T17:46:23.955761"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tactic_repost",
+  "target_metric": "反響率",
+  "tactic_name": "リポスト施策",
+  "description": "過去の高パフォーマンス投稿をリポストし、新規フォロワーへ再露出させる",
+  "plan_type": [
+    "スタンダード",
+    "アドバンス"
+  ],
+  "category": "フィード",
+  "expected_impact": "中",
+  "source": "建装様事例（再現性のあるCV施策として活用）"
+}

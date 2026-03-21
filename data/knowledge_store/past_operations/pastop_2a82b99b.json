@@ -1,0 +1,93 @@
+{
+  "company_name": "リベスト様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 112952,
+      "profile_access": 11157,
+      "link_clicks": 239,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 2,
+      "followers": 5894
+    },
+    {
+      "month": "2508",
+      "reach": 104769,
+      "profile_access": 6302,
+      "link_clicks": 183,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6240
+    },
+    {
+      "month": "2509",
+      "reach": 61967,
+      "profile_access": 5177,
+      "link_clicks": 269,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 6627
+    },
+    {
+      "month": "2510",
+      "reach": 62798,
+      "profile_access": 5140,
+      "link_clicks": 232,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 8,
+      "followers": 6945
+    },
+    {
+      "month": "2511",
+      "reach": 62811,
+      "profile_access": 5039,
+      "link_clicks": 179,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 7257
+    },
+    {
+      "month": "2512",
+      "reach": 114252,
+      "profile_access": 4450,
+      "link_clicks": 236,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7497
+    },
+    {
+      "month": "2601",
+      "reach": 331151,
+      "profile_access": 5434,
+      "link_clicks": 193,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7782
+    },
+    {
+      "month": "2602",
+      "reach": 413013,
+      "profile_access": 6232,
+      "link_clicks": 178,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 3,
+      "followers": 8186
+    }
+  ],
+  "source_file": "【リベスト様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_2a82b99b",
+  "created_at": "2026-03-21T17:46:29.063415"
+}

@@ -1,0 +1,93 @@
+{
+  "company_name": "La prochaine HOME様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 4674,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1134
+    },
+    {
+      "month": "2508",
+      "reach": 5332,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1383
+    },
+    {
+      "month": "2509",
+      "reach": 6965,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1593
+    },
+    {
+      "month": "2510",
+      "reach": 7925,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1785
+    },
+    {
+      "month": "2511",
+      "reach": 6499,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2009
+    },
+    {
+      "month": "2512",
+      "reach": 7359,
+      "profile_access": 1964,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2218
+    },
+    {
+      "month": "2601",
+      "reach": 7864,
+      "profile_access": 2386,
+      "link_clicks": 23,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2426
+    },
+    {
+      "month": "2602",
+      "reach": 6497,
+      "profile_access": 2266,
+      "link_clicks": 37,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2620
+    }
+  ],
+  "source_file": "【La prochaine HOME様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_80e10fb1",
+  "created_at": "2026-03-21T17:46:23.079887"
+}

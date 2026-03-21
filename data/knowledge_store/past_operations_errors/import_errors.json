@@ -1,0 +1,2833 @@
+[
+  {
+    "company": "FMT",
+    "file": "Copy of 【FMT】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "FMT",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "Copy of 【FMT】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_043bbd60",
+      "created_at": "2026-03-21T17:46:22.789672"
+    }
+  },
+  {
+    "company": "FMT",
+    "file": "【FMT】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "FMT",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【FMT】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_a6512aeb",
+      "created_at": "2026-03-21T17:46:22.858581"
+    }
+  },
+  {
+    "company": "G-FLAT様",
+    "file": "【G-FLAT様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "tatta様",
+    "file": "【tatta様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "tatta様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 0
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 0
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 0
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【tatta様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_4633693a",
+      "created_at": "2026-03-21T17:46:23.448920"
+    }
+  },
+  {
+    "company": "かみくぼリノベ",
+    "file": "【かみくぼリノベ】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "ひろはうす様",
+    "file": "【ひろはうす様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ひろはうす様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ひろはうす様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_f0143869",
+      "created_at": "2026-03-21T17:46:23.875295"
+    }
+  },
+  {
+    "company": "アイズホーム様",
+    "file": "【アイズホーム様】Instagram月次レポート_KPI表(1).xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "アイズホーム様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【アイズホーム様】Instagram月次レポート_KPI表(1).xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_3a8645b9",
+      "created_at": "2026-03-21T17:46:24.101187"
+    }
+  },
+  {
+    "company": "アップルホーム様",
+    "file": "【アップルホーム様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "アップルホーム様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【アップルホーム様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_44523c48",
+      "created_at": "2026-03-21T17:46:24.410009"
+    }
+  },
+  {
+    "company": "エイジングハウス様",
+    "file": "【エイジングハウス様】Instagram月次レポート_KPI表 _.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "コスモ建設様",
+    "file": "【コスモ建設様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "サンキホーム様",
+    "file": "【サンキホーム様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "月データ列(yymm形式)が見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "サンワ設計様",
+    "file": "【サンワ設計様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "サンワ設計様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【サンワ設計様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_3742aaae",
+      "created_at": "2026-03-21T17:46:25.676206"
+    }
+  },
+  {
+    "company": "シンプルイズ様",
+    "file": "【シンプルイズ様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "シンプルイズ様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【シンプルイズ様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_f40420dc",
+      "created_at": "2026-03-21T17:46:25.830134"
+    }
+  },
+  {
+    "company": "セルコホーム様",
+    "file": "【セルコホーム様】Instagram月次レポート_KPI表 _.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "センコー様",
+    "file": "【センコー様】Instagram月次レポート_KPI表 のコピー のコピー.xlsx",
+    "errors": [
+      "月データ列(yymm形式)が見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "センコー様",
+    "file": "【センコー様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "[2510] プロフアクセス(488) > リーチ(80)",
+      "[2511] プロフアクセス(884) > リーチ(713)",
+      "[2512] プロフアクセス(1,992) > リーチ(790)",
+      "[2601] プロフアクセス(2,834) > リーチ(968)"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "センコー様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2509~2601",
+      "notes": "KPIシートから自動取り込み。5ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2509",
+          "reach": 27,
+          "profile_access": 0,
+          "link_clicks": 0,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 8
+        },
+        {
+          "month": "2510",
+          "reach": 80,
+          "profile_access": 488,
+          "link_clicks": 12,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 101
+        },
+        {
+          "month": "2511",
+          "reach": 713,
+          "profile_access": 884,
+          "link_clicks": 21,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 258
+        },
+        {
+          "month": "2512",
+          "reach": 790,
+          "profile_access": 1992,
+          "link_clicks": 28,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 491
+        },
+        {
+          "month": "2601",
+          "reach": 968,
+          "profile_access": 2834,
+          "link_clicks": 29,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 728
+        }
+      ],
+      "source_file": "【センコー様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "[2510] プロフアクセス(488) > リーチ(80)",
+        "[2511] プロフアクセス(884) > リーチ(713)",
+        "[2512] プロフアクセス(1,992) > リーチ(790)",
+        "[2601] プロフアクセス(2,834) > リーチ(968)"
+      ],
+      "id": "pastop_1c1e48e0",
+      "created_at": "2026-03-21T17:46:26.214975"
+    }
+  },
+  {
+    "company": "テクノストラクチャー様",
+    "file": "【テクノストラクチャー様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "ニコタス様",
+    "file": "【ニコタス様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "[2602] プロフアクセス(1,896) > リーチ(353)"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ニコタス様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2601~2602",
+      "notes": "KPIシートから自動取り込み。2ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2601",
+          "reach": 0,
+          "profile_access": 321,
+          "link_clicks": 8,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1447
+        },
+        {
+          "month": "2602",
+          "reach": 353,
+          "profile_access": 1896,
+          "link_clicks": 62,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1710
+        }
+      ],
+      "source_file": "【ニコタス様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "[2602] プロフアクセス(1,896) > リーチ(353)"
+      ],
+      "id": "pastop_49725e91",
+      "created_at": "2026-03-21T17:46:26.894865"
+    }
+  },
+  {
+    "company": "ネクストイノベーション様",
+    "file": "【ネクストイノベーション様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessの5/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksの5/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの5/5月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ネクストイノベーション様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 1637,
+          "link_clicks": 73,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1032
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ネクストイノベーション様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessの5/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksの5/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの5/5月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_ef15f865",
+      "created_at": "2026-03-21T17:46:27.008189"
+    }
+  },
+  {
+    "company": "ネスハウス様",
+    "file": "【ネスハウス様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ネスハウス様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ネスハウス様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_854ac14d",
+      "created_at": "2026-03-21T17:46:27.175970"
+    }
+  },
+  {
+    "company": "ノアスタイル様",
+    "file": "【ノアスタイル様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "月データ列(yymm形式)が見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "ハートムリビング様",
+    "file": "【ハートムリビング様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ハートムリビング様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ハートムリビング様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_d2bac831",
+      "created_at": "2026-03-21T17:46:27.745241"
+    }
+  },
+  {
+    "company": "フォーラムプランニング様",
+    "file": "【フォーラムプランニング様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "フォーラムプランニング様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【フォーラムプランニング様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_8fe00a99",
+      "created_at": "2026-03-21T17:46:27.951218"
+    }
+  },
+  {
+    "company": "マツケンホーム様",
+    "file": "【マツケンホーム様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "マツケンホーム様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【マツケンホーム様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_4626c659",
+      "created_at": "2026-03-21T17:46:28.425940"
+    }
+  },
+  {
+    "company": "マミーハウス様",
+    "file": "【マミーハウス様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "マミーハウス様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【マミーハウス様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_c7c16e77",
+      "created_at": "2026-03-21T17:46:28.634975"
+    }
+  },
+  {
+    "company": "ライフデザインカバヤ様",
+    "file": "【ライフデザインカバヤ様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ライフデザインカバヤ様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ライフデザインカバヤ様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_86e6dcb7",
+      "created_at": "2026-03-21T17:46:28.825825"
+    }
+  },
+  {
+    "company": "ロゴスホーム様",
+    "file": "【ロゴスホーム様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "ロゴスホーム様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【ロゴスホーム様】Instagram月次レポート_KPI表_.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_aacd90a9",
+      "created_at": "2026-03-21T17:46:29.277340"
+    }
+  },
+  {
+    "company": "前里工務店様",
+    "file": "【前里工務店様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "前里工務店様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【前里工務店様】Instagram月次レポート_KPI表_.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_74817e9f",
+      "created_at": "2026-03-21T17:46:29.673204"
+    }
+  },
+  {
+    "company": "千葉建設",
+    "file": "【千葉建設】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "千葉建設",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【千葉建設】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_ab2a58e9",
+      "created_at": "2026-03-21T17:46:29.863130"
+    }
+  },
+  {
+    "company": "国興ホーム様",
+    "file": "【国興ホーム様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "国興ホーム様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【国興ホーム様】Instagram月次レポート_KPI表_.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_fd11eb98",
+      "created_at": "2026-03-21T17:46:30.066121"
+    }
+  },
+  {
+    "company": "小野田産業様",
+    "file": "【小野田産業様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの5/5月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "小野田産業様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2601",
+      "notes": "KPIシートから自動取り込み。7ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 3198,
+          "profile_access": 499,
+          "link_clicks": 13,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1601
+        },
+        {
+          "month": "2601",
+          "reach": 47616,
+          "profile_access": 919,
+          "link_clicks": 32,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1789
+        }
+      ],
+      "source_file": "【小野田産業様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの5/5月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_2b3ff93e",
+      "created_at": "2026-03-21T17:46:30.377525"
+    }
+  },
+  {
+    "company": "岡春工務店様",
+    "file": "【岡春工務店様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの5/5月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "岡春工務店様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2602",
+      "notes": "KPIシートから自動取り込み。8ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2345
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2512",
+          "reach": 4432,
+          "profile_access": 676,
+          "link_clicks": 20,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1604
+        },
+        {
+          "month": "2601",
+          "reach": 3673,
+          "profile_access": 800,
+          "link_clicks": 26,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1724
+        },
+        {
+          "month": "2602",
+          "reach": 3456,
+          "profile_access": 823,
+          "link_clicks": 41,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 1838
+        }
+      ],
+      "source_file": "【岡春工務店様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの5/5月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_da78396d",
+      "created_at": "2026-03-21T17:46:30.538504"
+    }
+  },
+  {
+    "company": "建房様",
+    "file": "【建房様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "建房様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【建房様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_4efdb62b",
+      "created_at": "2026-03-21T17:46:30.646361"
+    }
+  },
+  {
+    "company": "永太建工様",
+    "file": "【永太建工様】Instagram月次レポート_KPI表 のコピー.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "永太建工様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【永太建工様】Instagram月次レポート_KPI表 のコピー.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_721a2b74",
+      "created_at": "2026-03-21T17:46:31.133910"
+    }
+  },
+  {
+    "company": "狭山不動産様",
+    "file": "【狭山不動産様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "狭山不動産様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【狭山不動産様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_86b42ba4",
+      "created_at": "2026-03-21T17:46:31.239864"
+    }
+  },
+  {
+    "company": "美都住販分譲様",
+    "file": "【美都住販分譲様】Instagram月次レポート_KPI表  のコピー.xlsx",
+    "errors": [
+      "有効な数値データが見つかりません"
+    ],
+    "type": "parse_error"
+  },
+  {
+    "company": "藤島建設様",
+    "file": "【藤島建設様】Instagram月次レポート_KPI表.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "藤島建設様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【藤島建設様】Instagram月次レポート_KPI表.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_6d853327",
+      "created_at": "2026-03-21T17:46:31.595836"
+    }
+  },
+  {
+    "company": "遠鉄リノベ様",
+    "file": "【遠鉄リノベ様】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "reachが全月同じ値(15000)。目標値をコピーした可能性",
+      "reachの6/6月が同じ値(15000)。データの正確性を確認",
+      "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+      "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+      "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+      "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "遠鉄リノベ様",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2512",
+      "notes": "KPIシートから自動取り込み。6ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2457
+        },
+        {
+          "month": "2508",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2637
+        },
+        {
+          "month": "2509",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2743
+        },
+        {
+          "month": "2510",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 2852
+        },
+        {
+          "month": "2511",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3141
+        },
+        {
+          "month": "2512",
+          "reach": 15000,
+          "profile_access": 300,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 3341
+        }
+      ],
+      "source_file": "【遠鉄リノベ様】Instagram月次レポート_KPI表_.xlsx",
+      "import_errors": [
+        "reachが全月同じ値(15000)。目標値をコピーした可能性",
+        "reachの6/6月が同じ値(15000)。データの正確性を確認",
+        "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+        "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+        "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+        "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_f1413e6a",
+      "created_at": "2026-03-21T17:46:31.902747"
+    }
+  },
+  {
+    "company": "鈴木屋木材",
+    "file": "【鈴木屋木材】Instagram月次レポート_KPI表_.xlsx",
+    "errors": [
+      "cvが全月同じ値(1)。目標値をコピーした可能性",
+      "cvの6/6月が同じ値(1)。データの正確性を確認"
+    ],
+    "type": "data_warning",
+    "data": {
+      "company_name": "鈴木屋木材",
+      "area": "",
+      "plan_type": "不明",
+      "period": "2507~2602",
+      "notes": "KPIシートから自動取り込み。8ヶ月分。",
+      "monthly_data": [
+        {
+          "month": "2507",
+          "reach": 14344,
+          "profile_access": 1247,
+          "link_clicks": 19,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 4476
+        },
+        {
+          "month": "2508",
+          "reach": 54422,
+          "profile_access": 2167,
+          "link_clicks": 24,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 4685
+        },
+        {
+          "month": "2509",
+          "reach": 35424,
+          "profile_access": 951,
+          "link_clicks": 6,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 4677
+        },
+        {
+          "month": "2510",
+          "reach": 26888,
+          "profile_access": 1573,
+          "link_clicks": 15,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 4822
+        },
+        {
+          "month": "2511",
+          "reach": 9661,
+          "profile_access": 1943,
+          "link_clicks": 20,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 5036
+        },
+        {
+          "month": "2512",
+          "reach": 10778,
+          "profile_access": 1669,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 1,
+          "followers": 5214
+        },
+        {
+          "month": "2601",
+          "reach": 11952,
+          "profile_access": 2387,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 5416
+        },
+        {
+          "month": "2602",
+          "reach": 21338,
+          "profile_access": 2345,
+          "link_clicks": 100,
+          "link_clicks_profile": null,
+          "link_clicks_story": null,
+          "cv": 0,
+          "followers": 5629
+        }
+      ],
+      "source_file": "【鈴木屋木材】Instagram月次レポート_KPI表_.xlsx",
+      "import_errors": [
+        "cvが全月同じ値(1)。目標値をコピーした可能性",
+        "cvの6/6月が同じ値(1)。データの正確性を確認"
+      ],
+      "id": "pastop_70eb57c5",
+      "created_at": "2026-03-21T17:46:32.065786"
+    }
+  }
+]

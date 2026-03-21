@@ -1,0 +1,83 @@
+{
+  "company_name": "健康住宅様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2601",
+  "notes": "KPIシートから自動取り込み。7ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 26389,
+      "profile_access": 2517,
+      "link_clicks": 42,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6580
+    },
+    {
+      "month": "2508",
+      "reach": 17481,
+      "profile_access": 2212,
+      "link_clicks": 47,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6667
+    },
+    {
+      "month": "2509",
+      "reach": 16577,
+      "profile_access": 1871,
+      "link_clicks": 36,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6731
+    },
+    {
+      "month": "2510",
+      "reach": 15609,
+      "profile_access": 2301,
+      "link_clicks": 32,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6855
+    },
+    {
+      "month": "2511",
+      "reach": 19305,
+      "profile_access": 1744,
+      "link_clicks": 28,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6952
+    },
+    {
+      "month": "2512",
+      "reach": 17635,
+      "profile_access": 1491,
+      "link_clicks": 33,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7050
+    },
+    {
+      "month": "2601",
+      "reach": 21970,
+      "profile_access": 2583,
+      "link_clicks": 50,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7164
+    }
+  ],
+  "source_file": "【健康住宅様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_4ef6cbc6",
+  "created_at": "2026-03-21T17:46:29.471797"
+}

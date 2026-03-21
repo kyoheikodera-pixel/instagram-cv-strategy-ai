@@ -1,0 +1,82 @@
+{
+  "company_name": "永太建工様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2512",
+  "notes": "KPIシートから自動取り込み。6ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2457
+    },
+    {
+      "month": "2508",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2637
+    },
+    {
+      "month": "2509",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2743
+    },
+    {
+      "month": "2510",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2852
+    },
+    {
+      "month": "2511",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3141
+    },
+    {
+      "month": "2512",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3341
+    }
+  ],
+  "source_file": "【永太建工様】Instagram月次レポート_KPI表 のコピー.xlsx",
+  "import_errors": [
+    "reachが全月同じ値(15000)。目標値をコピーした可能性",
+    "reachの6/6月が同じ値(15000)。データの正確性を確認",
+    "profile_accessが全月同じ値(300)。目標値をコピーした可能性",
+    "profile_accessの6/6月が同じ値(300)。データの正確性を確認",
+    "link_clicksが全月同じ値(100)。目標値をコピーした可能性",
+    "link_clicksの6/6月が同じ値(100)。データの正確性を確認",
+    "cvが全月同じ値(1)。目標値をコピーした可能性",
+    "cvの6/6月が同じ値(1)。データの正確性を確認"
+  ],
+  "id": "pastop_721a2b74",
+  "created_at": "2026-03-21T17:46:31.133910"
+}

@@ -1,0 +1,23 @@
+{
+  "company_name": "北海道セキスイハイム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2512~2512",
+  "notes": "KPIシートから自動取り込み。1ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2512",
+      "reach": 20928,
+      "profile_access": 2825,
+      "link_clicks": 173,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3523
+    }
+  ],
+  "source_file": "【北海道セキスイハイム様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_7696cfef",
+  "created_at": "2026-03-21T17:46:29.761155"
+}

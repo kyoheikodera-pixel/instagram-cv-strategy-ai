@@ -1,0 +1,93 @@
+{
+  "company_name": "コットンハウス様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 68165,
+      "profile_access": 2918,
+      "link_clicks": 49,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6538
+    },
+    {
+      "month": "2508",
+      "reach": 41419,
+      "profile_access": 2375,
+      "link_clicks": 92,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6668
+    },
+    {
+      "month": "2509",
+      "reach": 64742,
+      "profile_access": 2552,
+      "link_clicks": 64,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 6831
+    },
+    {
+      "month": "2510",
+      "reach": 41721,
+      "profile_access": 2442,
+      "link_clicks": 92,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6981
+    },
+    {
+      "month": "2511",
+      "reach": 28410,
+      "profile_access": 2350,
+      "link_clicks": 47,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7138
+    },
+    {
+      "month": "2512",
+      "reach": 42450,
+      "profile_access": 1688,
+      "link_clicks": 57,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7100
+    },
+    {
+      "month": "2601",
+      "reach": 112842,
+      "profile_access": 2586,
+      "link_clicks": 97,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7280
+    },
+    {
+      "month": "2602",
+      "reach": 103833,
+      "profile_access": 2813,
+      "link_clicks": 106,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7440
+    }
+  ],
+  "source_file": "【コットンハウス様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_8fbbb193",
+  "created_at": "2026-03-21T17:46:25.424652"
+}

@@ -1,0 +1,83 @@
+{
+  "company_name": "安水建設様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2601",
+  "notes": "KPIシートから自動取り込み。7ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 39723,
+      "profile_access": 1970,
+      "link_clicks": 120,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6505
+    },
+    {
+      "month": "2508",
+      "reach": 109621,
+      "profile_access": 2791,
+      "link_clicks": 58,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6615
+    },
+    {
+      "month": "2509",
+      "reach": 65027,
+      "profile_access": 2813,
+      "link_clicks": 55,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6727
+    },
+    {
+      "month": "2510",
+      "reach": 49720,
+      "profile_access": 2185,
+      "link_clicks": 34,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6851
+    },
+    {
+      "month": "2511",
+      "reach": 29381,
+      "profile_access": 2287,
+      "link_clicks": 45,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 7064
+    },
+    {
+      "month": "2512",
+      "reach": 17348,
+      "profile_access": 1155,
+      "link_clicks": 39,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7072
+    },
+    {
+      "month": "2601",
+      "reach": 16184,
+      "profile_access": 1812,
+      "link_clicks": 27,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 7350
+    }
+  ],
+  "source_file": "【安水建設様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_f7dcffa8",
+  "created_at": "2026-03-21T17:46:30.171102"
+}

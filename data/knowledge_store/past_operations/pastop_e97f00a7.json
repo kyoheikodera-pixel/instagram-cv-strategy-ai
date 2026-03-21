@@ -1,0 +1,93 @@
+{
+  "company_name": "金子建築様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 5472,
+      "profile_access": 1392,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 800
+    },
+    {
+      "month": "2508",
+      "reach": 4015,
+      "profile_access": 596,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 835
+    },
+    {
+      "month": "2509",
+      "reach": 4993,
+      "profile_access": 828,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 877
+    },
+    {
+      "month": "2510",
+      "reach": 5019,
+      "profile_access": 882,
+      "link_clicks": 60,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1000
+    },
+    {
+      "month": "2511",
+      "reach": 5340,
+      "profile_access": 917,
+      "link_clicks": 41,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1181
+    },
+    {
+      "month": "2512",
+      "reach": 8554,
+      "profile_access": 1158,
+      "link_clicks": 68,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1342
+    },
+    {
+      "month": "2601",
+      "reach": 8234,
+      "profile_access": 1997,
+      "link_clicks": 137,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1557
+    },
+    {
+      "month": "2602",
+      "reach": 8831,
+      "profile_access": 2557,
+      "link_clicks": 130,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1759
+    }
+  ],
+  "source_file": "【金子建築様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_e97f00a7",
+  "created_at": "2026-03-21T17:46:31.977374"
+}

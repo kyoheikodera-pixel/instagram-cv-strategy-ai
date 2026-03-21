@@ -1,0 +1,93 @@
+{
+  "company_name": "山口企画設計様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 9922,
+      "profile_access": 1274,
+      "link_clicks": 32,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10094
+    },
+    {
+      "month": "2508",
+      "reach": 7986,
+      "profile_access": 510,
+      "link_clicks": 22,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10012
+    },
+    {
+      "month": "2509",
+      "reach": 9209,
+      "profile_access": 1388,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10186
+    },
+    {
+      "month": "2510",
+      "reach": 9938,
+      "profile_access": 1296,
+      "link_clicks": 25,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10397
+    },
+    {
+      "month": "2511",
+      "reach": 9125,
+      "profile_access": 1574,
+      "link_clicks": 31,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10630
+    },
+    {
+      "month": "2512",
+      "reach": 8686,
+      "profile_access": 1758,
+      "link_clicks": 40,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 10845
+    },
+    {
+      "month": "2601",
+      "reach": 8749,
+      "profile_access": 1473,
+      "link_clicks": 40,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 11053
+    },
+    {
+      "month": "2602",
+      "reach": 11523,
+      "profile_access": 2526,
+      "link_clicks": 40,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 11237
+    }
+  ],
+  "source_file": "【山口企画設計様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_56d42894",
+  "created_at": "2026-03-21T17:46:30.468568"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "tactic_pinned_post",
+  "target_metric": "リンククリック率",
+  "tactic_name": "ピン止め投稿3つ固定",
+  "description": "プロフィール上部にピン止め投稿を3つ固定。見学会・資料請求・保存版投稿を設置",
+  "plan_type": [
+    "スタンダード",
+    "アドバンス"
+  ],
+  "category": "フィード",
+  "expected_impact": "中",
+  "source": "競合分析（成功アカウント共通項）"
+}

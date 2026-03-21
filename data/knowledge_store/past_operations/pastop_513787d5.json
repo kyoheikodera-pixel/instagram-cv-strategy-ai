@@ -1,0 +1,43 @@
+{
+  "company_name": "ness.house様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2512~2602",
+  "notes": "KPIシートから自動取り込み。3ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2512",
+      "reach": 1176,
+      "profile_access": 885,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 93
+    },
+    {
+      "month": "2601",
+      "reach": 2372,
+      "profile_access": 1029,
+      "link_clicks": 51,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 215
+    },
+    {
+      "month": "2602",
+      "reach": 2352,
+      "profile_access": 1087,
+      "link_clicks": 52,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 331
+    }
+  ],
+  "source_file": "【ness.house様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_513787d5",
+  "created_at": "2026-03-21T17:46:23.373484"
+}

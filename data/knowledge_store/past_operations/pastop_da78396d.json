@@ -1,0 +1,96 @@
+{
+  "company_name": "岡春工務店様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2345
+    },
+    {
+      "month": "2508",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2457
+    },
+    {
+      "month": "2509",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2637
+    },
+    {
+      "month": "2510",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2743
+    },
+    {
+      "month": "2511",
+      "reach": 15000,
+      "profile_access": 300,
+      "link_clicks": 100,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 2852
+    },
+    {
+      "month": "2512",
+      "reach": 4432,
+      "profile_access": 676,
+      "link_clicks": 20,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1604
+    },
+    {
+      "month": "2601",
+      "reach": 3673,
+      "profile_access": 800,
+      "link_clicks": 26,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1724
+    },
+    {
+      "month": "2602",
+      "reach": 3456,
+      "profile_access": 823,
+      "link_clicks": 41,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1838
+    }
+  ],
+  "source_file": "【岡春工務店様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [
+    "cvが全月同じ値(1)。目標値をコピーした可能性",
+    "cvの5/5月が同じ値(1)。データの正確性を確認"
+  ],
+  "id": "pastop_da78396d",
+  "created_at": "2026-03-21T17:46:30.538504"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tactic_cat_content",
+  "target_metric": "リーチ",
+  "tactic_name": "猫専門住宅コンテンツ",
+  "description": "猫専門住宅の事例リールを投稿し、ストーリーズで猫LPリンクを添付。ニッチコンテンツでリーチ拡大",
+  "plan_type": [
+    "アドバンス"
+  ],
+  "category": "リール",
+  "expected_impact": "高",
+  "source": "アールグラフ様事例"
+}

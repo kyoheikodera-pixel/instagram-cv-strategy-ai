@@ -1,0 +1,93 @@
+{
+  "company_name": "アップルホームリフォーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 22329,
+      "profile_access": 1277,
+      "link_clicks": 12,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6017
+    },
+    {
+      "month": "2508",
+      "reach": 34686,
+      "profile_access": 1253,
+      "link_clicks": 38,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6063
+    },
+    {
+      "month": "2509",
+      "reach": 12035,
+      "profile_access": 1114,
+      "link_clicks": 26,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6099
+    },
+    {
+      "month": "2510",
+      "reach": 9965,
+      "profile_access": 963,
+      "link_clicks": 24,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6139
+    },
+    {
+      "month": "2511",
+      "reach": 7598,
+      "profile_access": 709,
+      "link_clicks": 14,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6133
+    },
+    {
+      "month": "2512",
+      "reach": 8508,
+      "profile_access": 538,
+      "link_clicks": 28,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6079
+    },
+    {
+      "month": "2601",
+      "reach": 8872,
+      "profile_access": 1005,
+      "link_clicks": 31,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6134
+    },
+    {
+      "month": "2602",
+      "reach": 9088,
+      "profile_access": 1330,
+      "link_clicks": 16,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6250
+    }
+  ],
+  "source_file": "【アップルホームリフォーム様】Instagram月次レポート_KPI表 のコピー.xlsx",
+  "import_errors": [],
+  "id": "pastop_b0d1ee21",
+  "created_at": "2026-03-21T17:46:24.333946"
+}

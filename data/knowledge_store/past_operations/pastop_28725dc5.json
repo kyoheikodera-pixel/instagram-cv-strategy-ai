@@ -1,0 +1,93 @@
+{
+  "company_name": "すぎはら様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 4702,
+      "profile_access": 1199,
+      "link_clicks": 53,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1328
+    },
+    {
+      "month": "2508",
+      "reach": 5007,
+      "profile_access": 1337,
+      "link_clicks": 50,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1442
+    },
+    {
+      "month": "2509",
+      "reach": 6827,
+      "profile_access": 944,
+      "link_clicks": 48,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1568
+    },
+    {
+      "month": "2510",
+      "reach": 5637,
+      "profile_access": 896,
+      "link_clicks": 22,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1686
+    },
+    {
+      "month": "2511",
+      "reach": 5012,
+      "profile_access": 1284,
+      "link_clicks": 19,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1792
+    },
+    {
+      "month": "2512",
+      "reach": 5995,
+      "profile_access": 959,
+      "link_clicks": 12,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1894
+    },
+    {
+      "month": "2601",
+      "reach": 5829,
+      "profile_access": 988,
+      "link_clicks": 16,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1995
+    },
+    {
+      "month": "2602",
+      "reach": 5235,
+      "profile_access": 885,
+      "link_clicks": 13,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2105
+    }
+  ],
+  "source_file": "【すぎはら様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_28725dc5",
+  "created_at": "2026-03-21T17:46:23.799969"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "tactic_multi_format",
+  "target_metric": "反響率",
+  "tactic_name": "複数形式での訴求（フィード+リール+ストーリーズ）",
+  "description": "同一テーマをフィード・リール・ストーリーズの3形式で訴求し、ユーザーの接触機会を最大化",
+  "plan_type": [
+    "アドバンス"
+  ],
+  "category": "総合",
+  "expected_impact": "高",
+  "source": "アールグラフ様事例"
+}

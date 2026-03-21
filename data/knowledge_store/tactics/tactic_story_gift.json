@@ -1,0 +1,12 @@
+{
+  "id": "tactic_story_gift",
+  "target_metric": "リンククリック率",
+  "tactic_name": "ギフトカード訴求ストーリーズ",
+  "description": "ギフトカード（5,000円等）のベネフィット訴求をストーリーズに盛り込み、リンククリックを促進",
+  "plan_type": [
+    "アドバンス"
+  ],
+  "category": "ストーリーズ",
+  "expected_impact": "高",
+  "source": "建装様事例"
+}

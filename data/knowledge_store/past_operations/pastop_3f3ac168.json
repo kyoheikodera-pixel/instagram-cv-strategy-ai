@@ -1,0 +1,93 @@
+{
+  "company_name": "ホームラボ様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 8729,
+      "profile_access": 1203,
+      "link_clicks": 28,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5078
+    },
+    {
+      "month": "2508",
+      "reach": 8070,
+      "profile_access": 1644,
+      "link_clicks": 32,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5158
+    },
+    {
+      "month": "2509",
+      "reach": 8668,
+      "profile_access": 1477,
+      "link_clicks": 36,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5363
+    },
+    {
+      "month": "2510",
+      "reach": 7667,
+      "profile_access": 1477,
+      "link_clicks": 33,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5542
+    },
+    {
+      "month": "2511",
+      "reach": 7583,
+      "profile_access": 1274,
+      "link_clicks": 34,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5699
+    },
+    {
+      "month": "2512",
+      "reach": 8281,
+      "profile_access": 1202,
+      "link_clicks": 48,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5851
+    },
+    {
+      "month": "2601",
+      "reach": 9358,
+      "profile_access": 1423,
+      "link_clicks": 53,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6073
+    },
+    {
+      "month": "2602",
+      "reach": 11001,
+      "profile_access": 1604,
+      "link_clicks": 21,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6270
+    }
+  ],
+  "source_file": "【ホームラボ様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_3f3ac168",
+  "created_at": "2026-03-21T17:46:28.200304"
+}

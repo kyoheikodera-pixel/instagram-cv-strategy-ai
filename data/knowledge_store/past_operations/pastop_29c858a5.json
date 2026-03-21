@@ -1,0 +1,63 @@
+{
+  "company_name": "千葉建設様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2510~2602",
+  "notes": "KPIシートから自動取り込み。5ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2510",
+      "reach": 7534,
+      "profile_access": 1254,
+      "link_clicks": 71,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1481
+    },
+    {
+      "month": "2511",
+      "reach": 6473,
+      "profile_access": 1418,
+      "link_clicks": 36,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1582
+    },
+    {
+      "month": "2512",
+      "reach": 7232,
+      "profile_access": 1065,
+      "link_clicks": 26,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1682
+    },
+    {
+      "month": "2601",
+      "reach": 7448,
+      "profile_access": 1355,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1784
+    },
+    {
+      "month": "2602",
+      "reach": 13923,
+      "profile_access": 1258,
+      "link_clicks": 27,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1902
+    }
+  ],
+  "source_file": "【千葉建設様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_29c858a5",
+  "created_at": "2026-03-21T17:46:29.968580"
+}

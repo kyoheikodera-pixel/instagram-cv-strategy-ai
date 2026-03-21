@@ -1,0 +1,93 @@
+{
+  "company_name": "ハシモトホーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 23522,
+      "profile_access": 3616,
+      "link_clicks": 225,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3261
+    },
+    {
+      "month": "2508",
+      "reach": 16325,
+      "profile_access": 3119,
+      "link_clicks": 140,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3411
+    },
+    {
+      "month": "2509",
+      "reach": 17891,
+      "profile_access": 3474,
+      "link_clicks": 176,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 3,
+      "followers": 3530
+    },
+    {
+      "month": "2510",
+      "reach": 20759,
+      "profile_access": 3281,
+      "link_clicks": 154,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3631
+    },
+    {
+      "month": "2511",
+      "reach": 21836,
+      "profile_access": 3020,
+      "link_clicks": 136,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3738
+    },
+    {
+      "month": "2512",
+      "reach": 23538,
+      "profile_access": 2477,
+      "link_clicks": 111,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 3845
+    },
+    {
+      "month": "2601",
+      "reach": 105431,
+      "profile_access": 3663,
+      "link_clicks": 211,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 3,
+      "followers": 3976
+    },
+    {
+      "month": "2602",
+      "reach": 86567,
+      "profile_access": 3460,
+      "link_clicks": 141,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4166
+    }
+  ],
+  "source_file": "【ハシモトホーム様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_ab4e2ac9",
+  "created_at": "2026-03-21T17:46:27.651483"
+}

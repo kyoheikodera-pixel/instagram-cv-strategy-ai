@@ -1,0 +1,63 @@
+{
+  "id": "case_rgraph",
+  "company_name": "アールグラフ様",
+  "area": "大阪",
+  "plan_history": "アドバンス",
+  "monthly_data": [
+    {
+      "month": "2024-09",
+      "plan": "アドバンス",
+      "reach": 198347,
+      "link_clicks": 201,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 6,
+      "cv_detail": {
+        "資料請求": 5,
+        "来場": 1
+      },
+      "cv_rate": 2.9
+    },
+    {
+      "month": "2024-10",
+      "plan": "アドバンス",
+      "reach": 240059,
+      "link_clicks": 268,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 6,
+      "cv_detail": {
+        "資料請求": 4,
+        "来場": 2
+      },
+      "cv_rate": 2.2
+    },
+    {
+      "month": "2024-11",
+      "plan": "アドバンス",
+      "reach": 212112,
+      "link_clicks": 233,
+      "link_clicks_profile": 198,
+      "link_clicks_story": 35,
+      "cv": 3,
+      "cv_detail": {
+        "資料請求": 2,
+        "来場": 1
+      },
+      "cv_rate": 1.2
+    }
+  ],
+  "kpi_targets": {
+    "link_clicks_monthly": 200,
+    "link_clicks_profile": 160,
+    "link_clicks_story": 40
+  },
+  "key_tactics": [
+    "猫専門住宅コンテンツ",
+    "保存版投稿",
+    "見学会デザイン改善",
+    "複数形式訴求（フィード+リール+ストーリーズ）",
+    "ピン止め投稿"
+  ],
+  "notes": "クリック目標達成でもCV未達→LP/HP品質の課題。コンテンツ一貫性がCV率に影響。"
+}

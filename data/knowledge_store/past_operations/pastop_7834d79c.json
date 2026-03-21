@@ -1,0 +1,83 @@
+{
+  "company_name": "アクティブハウス様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2601",
+  "notes": "KPIシートから自動取り込み。7ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 13539,
+      "profile_access": 1388,
+      "link_clicks": 43,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4267
+    },
+    {
+      "month": "2508",
+      "reach": 13114,
+      "profile_access": 1789,
+      "link_clicks": 43,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4488
+    },
+    {
+      "month": "2509",
+      "reach": 14823,
+      "profile_access": 1779,
+      "link_clicks": 37,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4702
+    },
+    {
+      "month": "2510",
+      "reach": 14165,
+      "profile_access": 1821,
+      "link_clicks": 54,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4923
+    },
+    {
+      "month": "2511",
+      "reach": 10866,
+      "profile_access": 1456,
+      "link_clicks": 16,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5134
+    },
+    {
+      "month": "2512",
+      "reach": 11892,
+      "profile_access": 1555,
+      "link_clicks": 43,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 5376
+    },
+    {
+      "month": "2601",
+      "reach": 10076,
+      "profile_access": 1181,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 5336
+    }
+  ],
+  "source_file": "【アクティブハウス様】Instagram月次レポート_KPI表_.xlsx",
+  "import_errors": [],
+  "id": "pastop_7834d79c",
+  "created_at": "2026-03-21T17:46:24.263420"
+}

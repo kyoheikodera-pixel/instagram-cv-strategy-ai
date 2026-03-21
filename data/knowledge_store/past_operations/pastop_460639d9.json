@@ -1,0 +1,93 @@
+{
+  "company_name": "積豊様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 7999,
+      "profile_access": 1844,
+      "link_clicks": 78,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4315
+    },
+    {
+      "month": "2508",
+      "reach": 8056,
+      "profile_access": 1863,
+      "link_clicks": 74,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4436
+    },
+    {
+      "month": "2509",
+      "reach": 7114,
+      "profile_access": 1134,
+      "link_clicks": 48,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4450
+    },
+    {
+      "month": "2510",
+      "reach": 6934,
+      "profile_access": 1206,
+      "link_clicks": 72,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 1,
+      "followers": 4486
+    },
+    {
+      "month": "2511",
+      "reach": 5753,
+      "profile_access": 768,
+      "link_clicks": 45,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4483
+    },
+    {
+      "month": "2512",
+      "reach": 9468,
+      "profile_access": 1572,
+      "link_clicks": 42,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4684
+    },
+    {
+      "month": "2601",
+      "reach": 10828,
+      "profile_access": 2535,
+      "link_clicks": 129,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 2,
+      "followers": 4888
+    },
+    {
+      "month": "2602",
+      "reach": 11969,
+      "profile_access": 1365,
+      "link_clicks": 98,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 4912
+    }
+  ],
+  "source_file": "【積豊様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_460639d9",
+  "created_at": "2026-03-21T17:46:31.296129"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "case_kensou",
+  "company_name": "建装様",
+  "area": "山形",
+  "plan_history": "St(3ヶ月) → Ad(9ヶ月)",
+  "monthly_data": [
+    {
+      "month": "2025-06",
+      "plan": "スタンダード",
+      "cv": 0,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-07",
+      "plan": "スタンダード",
+      "cv": 0,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-08",
+      "plan": "スタンダード",
+      "cv": 0,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-09",
+      "plan": "アドバンス",
+      "cv": 0,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-10",
+      "plan": "アドバンス",
+      "cv": 0,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-11",
+      "plan": "アドバンス",
+      "cv": 1,
+      "cv_detail": {}
+    },
+    {
+      "month": "2025-12",
+      "plan": "アドバンス",
+      "cv": 2,
+      "cv_detail": {}
+    },
+    {
+      "month": "2026-01",
+      "plan": "アドバンス",
+      "cv": 1,
+      "cv_detail": {}
+    },
+    {
+      "month": "2026-02",
+      "plan": "アドバンス",
+      "cv": 2,
+      "cv_detail": {}
+    },
+    {
+      "month": "2026-03",
+      "plan": "アドバンス",
+      "cv": 2,
+      "cv_detail": {}
+    }
+  ],
+  "followers_start": 1800,
+  "key_tactics": [
+    "フォロー施策",
+    "ストーリーズ施策",
+    "リポスト施策"
+  ],
+  "notes": "St3ヶ月でリーチ10,000安定→Ad移行後2ヶ月目から安定CV月1-2件。再現性◎"
+}

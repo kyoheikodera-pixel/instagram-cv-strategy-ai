@@ -1,0 +1,68 @@
+{
+  "company_name": "センコー様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2509~2601",
+  "notes": "KPIシートから自動取り込み。5ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2509",
+      "reach": 27,
+      "profile_access": 0,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 8
+    },
+    {
+      "month": "2510",
+      "reach": 80,
+      "profile_access": 488,
+      "link_clicks": 12,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 101
+    },
+    {
+      "month": "2511",
+      "reach": 713,
+      "profile_access": 884,
+      "link_clicks": 21,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 258
+    },
+    {
+      "month": "2512",
+      "reach": 790,
+      "profile_access": 1992,
+      "link_clicks": 28,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 491
+    },
+    {
+      "month": "2601",
+      "reach": 968,
+      "profile_access": 2834,
+      "link_clicks": 29,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 728
+    }
+  ],
+  "source_file": "【センコー様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [
+    "[2510] プロフアクセス(488) > リーチ(80)",
+    "[2511] プロフアクセス(884) > リーチ(713)",
+    "[2512] プロフアクセス(1,992) > リーチ(790)",
+    "[2601] プロフアクセス(2,834) > リーチ(968)"
+  ],
+  "id": "pastop_1c1e48e0",
+  "created_at": "2026-03-21T17:46:26.214975"
+}

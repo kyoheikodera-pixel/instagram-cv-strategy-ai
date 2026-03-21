@@ -1,0 +1,12 @@
+{
+  "id": "tactic_design_improvement",
+  "target_metric": "リンククリック率",
+  "tactic_name": "広告デザイン改善（情報量削減・優先度付け）",
+  "description": "見学会訴求の1枚目情報量を削減し視認性を向上。情報に優先度をつけたデザインでクリック率向上",
+  "plan_type": [
+    "アドバンス"
+  ],
+  "category": "フィード",
+  "expected_impact": "高",
+  "source": "アールグラフ様事例（9月CV0→10月CV2）"
+}

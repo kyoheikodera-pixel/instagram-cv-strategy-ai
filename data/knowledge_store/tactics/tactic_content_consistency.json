@@ -1,0 +1,13 @@
+{
+  "id": "tactic_content_consistency",
+  "target_metric": "反響率",
+  "tactic_name": "コンテンツ一貫性の確立",
+  "description": "リール・フィード・ストーリーで訴求内容と付随コンテンツを統一し、ユーザーの理解を促進",
+  "plan_type": [
+    "スタンダード",
+    "アドバンス"
+  ],
+  "category": "総合",
+  "expected_impact": "高",
+  "source": "アールグラフ様事例（一貫性不足→統一後CV獲得）"
+}

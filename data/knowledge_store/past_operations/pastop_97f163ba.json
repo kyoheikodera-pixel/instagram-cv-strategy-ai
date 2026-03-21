@@ -1,0 +1,33 @@
+{
+  "company_name": "ブラザー不動産様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2601~2602",
+  "notes": "KPIシートから自動取り込み。2ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2601",
+      "reach": 1267,
+      "profile_access": 344,
+      "link_clicks": 8,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 84
+    },
+    {
+      "month": "2602",
+      "reach": 1234,
+      "profile_access": 210,
+      "link_clicks": 18,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 90
+    }
+  ],
+  "source_file": "【ブラザー不動産様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_97f163ba",
+  "created_at": "2026-03-21T17:46:28.087557"
+}

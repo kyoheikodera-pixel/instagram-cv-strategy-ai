@@ -1,0 +1,35 @@
+{
+  "company_name": "ニコタス様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2601~2602",
+  "notes": "KPIシートから自動取り込み。2ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2601",
+      "reach": 0,
+      "profile_access": 321,
+      "link_clicks": 8,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1447
+    },
+    {
+      "month": "2602",
+      "reach": 353,
+      "profile_access": 1896,
+      "link_clicks": 62,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1710
+    }
+  ],
+  "source_file": "【ニコタス様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [
+    "[2602] プロフアクセス(1,896) > リーチ(353)"
+  ],
+  "id": "pastop_49725e91",
+  "created_at": "2026-03-21T17:46:26.894865"
+}

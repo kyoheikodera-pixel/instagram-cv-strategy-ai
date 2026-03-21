@@ -1,0 +1,83 @@
+{
+  "company_name": "エコビルド様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2508~2602",
+  "notes": "KPIシートから自動取り込み。7ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2508",
+      "reach": 18947,
+      "profile_access": 1399,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6343
+    },
+    {
+      "month": "2509",
+      "reach": 25387,
+      "profile_access": 1359,
+      "link_clicks": 34,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6424
+    },
+    {
+      "month": "2510",
+      "reach": 15683,
+      "profile_access": 1630,
+      "link_clicks": 29,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6533
+    },
+    {
+      "month": "2511",
+      "reach": 21985,
+      "profile_access": 1735,
+      "link_clicks": 98,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6640
+    },
+    {
+      "month": "2512",
+      "reach": 150536,
+      "profile_access": 2242,
+      "link_clicks": 59,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6795
+    },
+    {
+      "month": "2601",
+      "reach": 26066,
+      "profile_access": 2205,
+      "link_clicks": 81,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6922
+    },
+    {
+      "month": "2602",
+      "reach": 21644,
+      "profile_access": 1383,
+      "link_clicks": 76,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 6951
+    }
+  ],
+  "source_file": "【エコビルド様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_1ac45472",
+  "created_at": "2026-03-21T17:46:24.783159"
+}

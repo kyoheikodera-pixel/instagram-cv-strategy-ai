@@ -1,0 +1,93 @@
+{
+  "company_name": "前川建設様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 6807,
+      "profile_access": 809,
+      "link_clicks": 38,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1959
+    },
+    {
+      "month": "2508",
+      "reach": 6861,
+      "profile_access": 1055,
+      "link_clicks": 37,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2087
+    },
+    {
+      "month": "2509",
+      "reach": 7150,
+      "profile_access": 886,
+      "link_clicks": 20,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2239
+    },
+    {
+      "month": "2510",
+      "reach": 6854,
+      "profile_access": 970,
+      "link_clicks": 35,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2348
+    },
+    {
+      "month": "2511",
+      "reach": 6920,
+      "profile_access": 1240,
+      "link_clicks": 17,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2544
+    },
+    {
+      "month": "2512",
+      "reach": 7142,
+      "profile_access": 1286,
+      "link_clicks": 13,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2663
+    },
+    {
+      "month": "2601",
+      "reach": 6544,
+      "profile_access": 865,
+      "link_clicks": 15,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2669
+    },
+    {
+      "month": "2602",
+      "reach": 6504,
+      "profile_access": 1120,
+      "link_clicks": 27,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2784
+    }
+  ],
+  "source_file": "【前川建設様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_35e7da18",
+  "created_at": "2026-03-21T17:46:29.563214"
+}

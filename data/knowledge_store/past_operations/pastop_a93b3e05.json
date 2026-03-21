@@ -1,0 +1,93 @@
+{
+  "company_name": "アイズホーム様",
+  "area": "",
+  "plan_type": "不明",
+  "period": "2507~2602",
+  "notes": "KPIシートから自動取り込み。8ヶ月分。",
+  "monthly_data": [
+    {
+      "month": "2507",
+      "reach": 7048,
+      "profile_access": 925,
+      "link_clicks": 30,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1562
+    },
+    {
+      "month": "2508",
+      "reach": 7744,
+      "profile_access": 1481,
+      "link_clicks": 43,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1774
+    },
+    {
+      "month": "2509",
+      "reach": 7465,
+      "profile_access": 919,
+      "link_clicks": 40,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 1982
+    },
+    {
+      "month": "2510",
+      "reach": 7035,
+      "profile_access": 1227,
+      "link_clicks": 45,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2195
+    },
+    {
+      "month": "2511",
+      "reach": 7992,
+      "profile_access": 1471,
+      "link_clicks": 50,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2405
+    },
+    {
+      "month": "2512",
+      "reach": 7675,
+      "profile_access": 1574,
+      "link_clicks": 73,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2668
+    },
+    {
+      "month": "2601",
+      "reach": 9498,
+      "profile_access": 2018,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 2929
+    },
+    {
+      "month": "2602",
+      "reach": 8282,
+      "profile_access": 1863,
+      "link_clicks": 0,
+      "link_clicks_profile": null,
+      "link_clicks_story": null,
+      "cv": 0,
+      "followers": 3161
+    }
+  ],
+  "source_file": "【アイズホーム様】Instagram月次レポート_KPI表.xlsx",
+  "import_errors": [],
+  "id": "pastop_a93b3e05",
+  "created_at": "2026-03-21T17:46:24.178565"
+}

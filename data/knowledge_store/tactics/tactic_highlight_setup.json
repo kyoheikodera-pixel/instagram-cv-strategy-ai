@@ -1,0 +1,12 @@
+{
+  "id": "tactic_highlight_setup",
+  "target_metric": "リンククリック率",
+  "tactic_name": "ハイライト設置・整備",
+  "description": "CV動線用ハイライトを設置。voice・見学会・資料請求等カテゴリ別に整備",
+  "plan_type": [
+    "アドバンス"
+  ],
+  "category": "ハイライト",
+  "expected_impact": "高",
+  "source": "建装様事例・アールグラフ様事例"
+}
