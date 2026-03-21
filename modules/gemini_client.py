@@ -14,9 +14,17 @@ def get_model():
     """Geminiモデルのシングルトン取得"""
     global _model
     if _model is None:
-        api_key = os.getenv("GEMINI_API_KEY")
+        # Streamlit Cloud: st.secrets → ローカル: .env
+        api_key = None
+        try:
+            import streamlit as st
+            api_key = st.secrets.get("GEMINI_API_KEY")
+        except Exception:
+            pass
         if not api_key:
-            raise ValueError("GEMINI_API_KEY が .env に設定されていません")
+            api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEYが設定されていません。Streamlit CloudのSecretsまたは.envに設定してください")
         genai.configure(api_key=api_key)
         _model = genai.GenerativeModel("gemini-2.5-flash")
     return _model
