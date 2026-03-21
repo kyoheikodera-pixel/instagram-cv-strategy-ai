@@ -297,8 +297,8 @@ def render_strategy_tab():
         ])
 
     # --- 月別データ入力 ---
-    st.header("Step 2: 月別データ入力（最低3ヶ月）")
-    st.info("アルゴリズム変動の影響を平滑化するため、最低3ヶ月分の月別データが必要です。＋ボタンで追加入力も可能です。")
+    st.header("Step 2: 月別データ入力（1ヶ月から入力可能、3ヶ月以上推奨）")
+    st.info("1ヶ月分のデータから分析可能です。アルゴリズム変動の影響を平滑化するため、3ヶ月以上のデータを推奨します。＋ボタンで追加入力も可能です。")
 
     input_mode = st.radio("入力方法", ["手動入力", "ファイル読み込み（CSV/Excel）⭐おすすめ"], horizontal=True, key="input_mode")
 
@@ -1014,7 +1014,7 @@ def _render_csv_input() -> list:
 
 > **月の表記:** yymm形式（4桁）。例: 2512 = 2025年12月、2603 = 2026年3月。yyyy-mmやyyyy/mm形式も自動変換されます。
 
-> 💡 月の列は**3列以上**必要です。既存のスプレッドシートをそのまま使えます。
+> 💡 月の列は**1列以上**必要です。既存のスプレッドシートをそのまま使えます。
         """)
 
         # 縦型テンプレート
@@ -1028,7 +1028,7 @@ def _render_csv_input() -> list:
 | 月 | リーチ数 | プロフアクセス数 | リンククリック数 | CV数 | ... |
 |---|---|---|---|---|---|
 
-> 💡 **最低3行（3ヶ月分）必要**です。
+> 💡 **最低1行（1ヶ月分）必要**です。
         """)
         h_template = "月,リーチ数,プロフアクセス数,リンククリック数,CV数,資料請求,来場予約,プロフ経由クリック,ストーリー経由クリック,広告リーチ数,オーガニックリーチ数\n2510,0,0,0,0,0,0,0,0,0,0\n2511,0,0,0,0,0,0,0,0,0,0\n2512,0,0,0,0,0,0,0,0,0,0\n2601,0,0,0,0,0,0,0,0,0,0\n2602,0,0,0,0,0,0,0,0,0,0\n2603,0,0,0,0,0,0,0,0,0,0\n"
         st.download_button("📥 横型テンプレートをダウンロード", h_template, "横型テンプレート.csv", "text/csv")
@@ -1102,8 +1102,8 @@ def _validate_and_detect_format(df, user_selected_format: str) -> tuple:
     if df.empty:
         return None, ["ファイルが空です。データが含まれているか確認してください。"], []
 
-    if len(df.columns) < 3:
-        return None, ["列数が足りません（最低3列必要）。正しいフォーマットか確認してください。"], []
+    if len(df.columns) < 2:
+        return None, ["列数が足りません（最低2列必要）。正しいフォーマットか確認してください。"], []
 
     col_names = [str(c).strip() for c in df.columns]
 
@@ -1133,7 +1133,7 @@ def _validate_and_detect_format(df, user_selected_format: str) -> tuple:
                 yymm_col_count += 1
         except (ValueError, TypeError):
             pass
-    has_yymm_cols = yymm_col_count >= 3
+    has_yymm_cols = yymm_col_count >= 1
     if has_yymm_cols and vertical_keyword_hits >= 1:
         is_vertical_content = True
 
@@ -1173,8 +1173,10 @@ def _validate_and_detect_format(df, user_selected_format: str) -> tuple:
 
     # --- 追加バリデーション ---
     if detected == "vertical":
-        if yymm_col_count < 3:
-            errors.append(f"yymm形式の月データ列が{yymm_col_count}列しかありません。最低3列（3ヶ月分）必要です。")
+        if yymm_col_count < 1:
+            errors.append(f"yymm形式の月データ列が{yymm_col_count}列しかありません。最低1列（1ヶ月分）必要です。")
+        elif yymm_col_count < 3:
+            warnings.append("3ヶ月未満のデータのため、精度が低い可能性があります。3ヶ月以上のデータを推奨します。")
 
         # 必須行チェック（全列のデータを検査）
         required_categories = ["リーチ", "プロフ", "CV"]
@@ -1199,8 +1201,10 @@ def _validate_and_detect_format(df, user_selected_format: str) -> tuple:
         if missing:
             errors.append(f"必須列が不足しています: {', '.join(missing)}")
 
-        if len(df) < 3:
-            errors.append(f"データ行が{len(df)}行しかありません。最低3行（3ヶ月分）必要です。")
+        if len(df) < 1:
+            errors.append(f"データ行が{len(df)}行しかありません。最低1行（1ヶ月分）必要です。")
+        elif len(df) < 3:
+            warnings.append("3ヶ月未満のデータのため、精度が低い可能性があります。3ヶ月以上のデータを推奨します。")
 
     return detected, errors, warnings
 
@@ -1312,8 +1316,11 @@ def _parse_vertical_csv(df) -> list:
     # 月列をソート（非連続な列順に対応）
     month_cols.sort(key=lambda c: int(float(c)))
 
+    if len(month_cols) < 1:
+        st.error(f"月データ列が不足しています（{len(month_cols)}列）。yymm形式(例: 2501)の列が1つ以上必要です。")
+        return []
     if len(month_cols) < 3:
-        st.error(f"月データ列が不足しています（{len(month_cols)}列）。yymm形式(例: 2501)の列が3つ以上必要です。")
+        st.warning("3ヶ月未満のデータのため、精度が低い可能性があります。3ヶ月以上のデータを推奨します。")
         return []
 
     # --- Step 2: カテゴリ列・指標列を特定（Unnamed対応） ---
@@ -1531,9 +1538,11 @@ def _parse_horizontal_csv(df) -> list:
         st.error(f"必須列が不足しています: {', '.join(missing)}")
         return []
 
-    if len(df) < 3:
-        st.error(f"最低3ヶ月分のデータが必要です（現在 {len(df)}行）")
+    if len(df) < 1:
+        st.error(f"最低1ヶ月分のデータが必要です（現在 {len(df)}行）")
         return []
+    if len(df) < 3:
+        st.warning("3ヶ月未満のデータのため、精度が低い可能性があります。3ヶ月以上のデータを推奨します。")
 
     st.success(f"✅ {len(df)}ヶ月分のデータを読み込みました（横型フォーマット）")
 
