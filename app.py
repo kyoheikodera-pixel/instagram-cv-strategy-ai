@@ -330,18 +330,45 @@ def render_strategy_tab():
             return
 
         with st.spinner("ファネル分析中..."):
-            # ファネル集計
-            metrics = calculate_funnel_metrics(monthly_data_list)
+            # ファネル集計（直近1-3ヶ月のみを現状値として使用）
+            # baseline_months = min(入力月数, 3)
+            baseline = min(len(monthly_data_list), 3)
+            metrics = calculate_funnel_metrics(monthly_data_list, baseline_months=baseline)
+
+            # アカウント固有の成長率がある場合は表示
+            if metrics.account_growth_months >= 4:
+                st.info(f"📈 {metrics.account_growth_months}ヶ月分のデータからアカウント固有の成長率を算出しました（直近{baseline}ヶ月を現状値として使用）")
 
             # 事例ベースのベンチマーク算出
             benchmark_rates = get_benchmark_rates_from_cases(km, plan_type)
             if not benchmark_rates:
                 benchmark_rates = {k: v["mid"] for k, v in FALLBACK_BENCHMARKS.items()}
 
-            # 過去運用事例の成長率を取得して目標算出に反映
+            # 成長率の統合: アカウント固有 > 過去運用事例（業界平均）
             past_growth = km.get_growth_rates_from_past_ops()
             if past_growth:
-                benchmark_rates["_past_growth"] = past_growth
+                # アカウント固有の成長率があれば優先的に使用
+                if metrics.account_growth_months >= 4:
+                    account_g = {}
+                    if metrics.account_growth_reach is not None:
+                        account_g["reach"] = metrics.account_growth_reach
+                    if metrics.account_growth_pa is not None:
+                        account_g["profile_access"] = metrics.account_growth_pa
+                    if metrics.account_growth_clicks is not None:
+                        account_g["link_clicks"] = metrics.account_growth_clicks
+                    if metrics.account_growth_cv is not None:
+                        account_g["cv"] = metrics.account_growth_cv
+                    if metrics.account_growth_pa_rate is not None:
+                        account_g["profile_access_rate"] = metrics.account_growth_pa_rate
+                    if metrics.account_growth_lc_rate is not None:
+                        account_g["link_click_rate"] = metrics.account_growth_lc_rate
+                    if metrics.account_growth_cv_rate is not None:
+                        account_g["cv_rate"] = metrics.account_growth_cv_rate
+                    # アカウント固有で上書き（業界平均をベースに）
+                    merged = {**past_growth, **account_g}
+                    benchmark_rates["_past_growth"] = merged
+                else:
+                    benchmark_rates["_past_growth"] = past_growth
 
             # 目標逆算（期間に応じたCV目標を段階設定）
             # 最終目標CVを基準に、期間に応じた中間目標を設定
