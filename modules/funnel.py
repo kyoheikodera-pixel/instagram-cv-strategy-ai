@@ -68,6 +68,16 @@ class FunnelMetrics:
     trend_link_clicks: str = "横ばい"
     trend_cv: str = "横ばい"
 
+    # アカウント固有の月次成長率（4ヶ月以上のデータがある場合に算出）
+    account_growth_reach: Optional[float] = None
+    account_growth_pa: Optional[float] = None
+    account_growth_clicks: Optional[float] = None
+    account_growth_cv: Optional[float] = None
+    account_growth_pa_rate: Optional[float] = None
+    account_growth_lc_rate: Optional[float] = None
+    account_growth_cv_rate: Optional[float] = None
+    account_growth_months: int = 0  # 成長率算出に使用した月数
+
 
 @dataclass
 class FunnelTargets:
@@ -84,23 +94,37 @@ class FunnelTargets:
     period: str = "3ヶ月後"
 
 
-def calculate_funnel_metrics(monthly_data: list[MonthlyData]) -> FunnelMetrics:
-    """3ヶ月分のデータからファネル集計を算出"""
+def calculate_funnel_metrics(monthly_data: list[MonthlyData], baseline_months: int = 3) -> FunnelMetrics:
+    """ファネル集計を算出
+
+    Args:
+        monthly_data: 古い→新しい順のデータリスト
+        baseline_months: 現状値の算出に使用する直近月数（1-3）
+
+    設計:
+    - 現状値（avg_*）: 直近1-3ヶ月のみの平均（最新の状態を反映）
+    - 成長率（account_growth_*）: 4ヶ月以上ある場合、全期間から算出
+    - トレンド: 全期間のデータから判定
+    """
     n = len(monthly_data)
     if n == 0:
         return FunnelMetrics()
 
     metrics = FunnelMetrics()
 
-    # 平均値算出
-    metrics.avg_reach = sum(d.reach for d in monthly_data) / n
-    metrics.avg_profile_access = sum(d.profile_access for d in monthly_data) / n
-    metrics.avg_link_clicks = sum(d.link_clicks for d in monthly_data) / n
-    metrics.avg_cv = sum(d.cv for d in monthly_data) / n
-    metrics.avg_cv_inquiry = sum(d.cv_inquiry for d in monthly_data) / n
-    metrics.avg_cv_visit = sum(d.cv_visit for d in monthly_data) / n
+    # --- 現状値: 直近baseline_months月のみの平均 ---
+    baseline_months = min(max(baseline_months, 1), 3)
+    recent = monthly_data[-baseline_months:]  # 最新N月
+    nr = len(recent)
 
-    # 転換率算出（平均値ベース）
+    metrics.avg_reach = sum(d.reach for d in recent) / nr
+    metrics.avg_profile_access = sum(d.profile_access for d in recent) / nr
+    metrics.avg_link_clicks = sum(d.link_clicks for d in recent) / nr
+    metrics.avg_cv = sum(d.cv for d in recent) / nr
+    metrics.avg_cv_inquiry = sum(d.cv_inquiry for d in recent) / nr
+    metrics.avg_cv_visit = sum(d.cv_visit for d in recent) / nr
+
+    # 転換率算出（直近平均ベース）
     if metrics.avg_reach > 0:
         metrics.profile_access_rate = metrics.avg_profile_access / metrics.avg_reach * 100
     if metrics.avg_profile_access > 0:
@@ -108,24 +132,91 @@ def calculate_funnel_metrics(monthly_data: list[MonthlyData]) -> FunnelMetrics:
     if metrics.avg_link_clicks > 0:
         metrics.cv_rate = metrics.avg_cv / metrics.avg_link_clicks * 100
 
-    # 広告リーチ集計
-    ad_data = [d for d in monthly_data if d.reach_ad is not None]
+    # 広告リーチ集計（直近のみ）
+    ad_data = [d for d in recent if d.reach_ad is not None]
     if ad_data:
         metrics.avg_reach_ad = sum(d.reach_ad for d in ad_data) / len(ad_data)
-        org_data = [d for d in monthly_data if d.reach_organic is not None]
+        org_data = [d for d in recent if d.reach_organic is not None]
         if org_data:
             metrics.avg_reach_organic = sum(d.reach_organic for d in org_data) / len(org_data)
         if metrics.avg_reach > 0 and metrics.avg_reach_ad is not None:
             metrics.ad_ratio = metrics.avg_reach_ad / metrics.avg_reach * 100
 
-    # トレンド判定（3ヶ月分のデータから）
+    # --- トレンド判定: 全期間のデータから ---
     if n >= 2:
         metrics.trend_reach = _detect_trend([d.reach for d in monthly_data])
         metrics.trend_profile_access = _detect_trend([d.profile_access for d in monthly_data])
         metrics.trend_link_clicks = _detect_trend([d.link_clicks for d in monthly_data])
         metrics.trend_cv = _detect_trend([d.cv for d in monthly_data])
 
+    # --- アカウント固有の成長率: 4ヶ月以上ある場合に算出 ---
+    if n >= 4:
+        growth = _calculate_account_growth(monthly_data)
+        metrics.account_growth_reach = growth.get("reach")
+        metrics.account_growth_pa = growth.get("profile_access")
+        metrics.account_growth_clicks = growth.get("link_clicks")
+        metrics.account_growth_cv = growth.get("cv")
+        metrics.account_growth_pa_rate = growth.get("profile_access_rate")
+        metrics.account_growth_lc_rate = growth.get("link_click_rate")
+        metrics.account_growth_cv_rate = growth.get("cv_rate")
+        metrics.account_growth_months = n
+
     return metrics
+
+
+def _calculate_account_growth(monthly_data: list[MonthlyData]) -> dict:
+    """アカウント固有の月次成長率を算出（トリム平均）"""
+    growth = {"reach": [], "profile_access": [], "link_clicks": [], "cv": [],
+              "profile_access_rate": [], "link_click_rate": [], "cv_rate": []}
+
+    for i in range(1, len(monthly_data)):
+        prev = monthly_data[i - 1]
+        curr = monthly_data[i]
+
+        # 実数の成長率
+        for key, prev_val, curr_val in [
+            ("reach", prev.reach, curr.reach),
+            ("profile_access", prev.profile_access, curr.profile_access),
+            ("link_clicks", prev.link_clicks, curr.link_clicks),
+            ("cv", prev.cv, curr.cv),
+        ]:
+            if prev_val > 0 and curr_val >= 0:
+                rate = (curr_val - prev_val) / prev_val
+                if -3.0 <= rate <= 3.0:
+                    growth[key].append(rate)
+
+        # 遷移率の変化
+        if prev.reach > 0 and curr.reach > 0 and prev.profile_access > 0:
+            prev_rate = prev.profile_access / prev.reach
+            curr_rate = curr.profile_access / curr.reach
+            change = (curr_rate - prev_rate) / prev_rate
+            if -3.0 <= change <= 3.0:
+                growth["profile_access_rate"].append(change)
+
+        if prev.profile_access > 0 and curr.profile_access > 0 and prev.link_clicks > 0:
+            prev_rate = prev.link_clicks / prev.profile_access
+            curr_rate = curr.link_clicks / curr.profile_access
+            change = (curr_rate - prev_rate) / prev_rate
+            if -3.0 <= change <= 3.0:
+                growth["link_click_rate"].append(change)
+
+        if prev.link_clicks > 0 and curr.link_clicks > 0 and prev.cv > 0:
+            prev_rate = prev.cv / prev.link_clicks
+            curr_rate = curr.cv / curr.link_clicks
+            change = (curr_rate - prev_rate) / prev_rate
+            if -3.0 <= change <= 3.0:
+                growth["cv_rate"].append(change)
+
+    # トリム平均
+    result = {}
+    for key, vals in growth.items():
+        if vals:
+            sorted_v = sorted(vals)
+            n = len(sorted_v)
+            trim = max(1, n // 10)
+            trimmed = sorted_v[trim:n - trim] if n > 4 else sorted_v
+            result[key] = sum(trimmed) / len(trimmed) if trimmed else sorted_v[n // 2]
+    return result
 
 
 def reverse_calculate_targets(
