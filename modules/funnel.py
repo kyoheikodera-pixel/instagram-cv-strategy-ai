@@ -350,19 +350,35 @@ def reverse_calculate_targets(
     max_growth_pa = {"3ヶ月後": 1.3, "6ヶ月後": 1.6, "12ヶ月後": 2.2}.get(period, 1.6)
     max_growth_clicks = {"3ヶ月後": 2.0, "6ヶ月後": 3.0, "12ヶ月後": 5.0}.get(period, 3.0)
 
+    # --- PAの絶対天井（3つの条件の最小値） ---
+    # 条件1: 成長率上限（現状 × max_growth_pa）
+    # 条件2: PA率上限（リーチ × PA率Q90の1.1倍）= リーチに対する率上限
+    # 条件3: ハードキャップ（PA率 25%を絶対超えない = 実データ最大値32%以下）
+    def _calc_pa_ceiling(reach_val):
+        caps = []
+        # 条件1: 成長率上限
+        if current_metrics.avg_profile_access > 0:
+            caps.append(current_metrics.avg_profile_access * max_growth_pa)
+        # 条件2: リーチに対するPA率上限（ベンチマーク×1.1）
+        caps.append(reach_val * (bm_pa_rate * 1.1 / 100))
+        # 条件3: ハードキャップ（PA率25%、工務店業界の実データ最大に基づく）
+        caps.append(reach_val * 0.25)
+        return min(caps) if caps else float("inf")
+
     # 各実数に上限適用
     if current_metrics.avg_reach > 0:
         needed_reach = min(needed_reach, current_metrics.avg_reach * max_growth_reach)
-    if current_metrics.avg_profile_access > 0:
-        needed_pa = min(needed_pa, current_metrics.avg_profile_access * max_growth_pa)
+    # PAは絶対天井で制限
+    needed_pa = min(needed_pa, _calc_pa_ceiling(needed_reach))
     if current_metrics.avg_link_clicks > 0:
         needed_clicks = min(needed_clicks, current_metrics.avg_link_clicks * max_growth_clicks)
 
     # 順算で整合性チェック（上限を超えない範囲で）
     pa_from_reach = needed_reach * (projected_pa_rate / 100)
-    if current_metrics.avg_profile_access > 0:
-        pa_from_reach = min(pa_from_reach, current_metrics.avg_profile_access * max_growth_pa)
+    pa_from_reach = min(pa_from_reach, _calc_pa_ceiling(needed_reach))
     needed_pa = max(needed_pa, pa_from_reach)
+    # 最終PA天井を再度適用（max() で上がった分を抑える）
+    needed_pa = min(needed_pa, _calc_pa_ceiling(needed_reach))
 
     clicks_from_pa = needed_pa * (projected_lc_rate / 100)
     if current_metrics.avg_link_clicks > 0:
