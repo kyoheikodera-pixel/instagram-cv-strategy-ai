@@ -241,18 +241,22 @@ def reverse_calculate_targets(
     past_growth = benchmark_rates.get("_past_growth", {}) if benchmark_rates else {}
 
     # 各指標の月次成長率（過去事例 or デフォルト）
-    # デフォルトは控えめに設定
-    growth_reach = past_growth.get("reach", 0.03)          # リーチ: 月+3%
-    growth_pa = past_growth.get("profile_access", 0.03)    # PA: 月+3%
-    growth_clicks = past_growth.get("link_clicks", 0.03)   # クリック: 月+3%
-    growth_pa_rate = past_growth.get("profile_access_rate", 0.005)  # PA率: 月+0.5%
+    # 94社実データに基づく現実的なデフォルト:
+    # - リーチ: 3ヶ月中央値×1.04 → 月+1.3%相当
+    # - PA:    3ヶ月中央値×1.08 だが51%が横ばい/低下 → 月+1%（控えめ）
+    # - クリック: 施策次第で大きく伸びる → 月+2%
+    growth_reach = past_growth.get("reach", 0.015)          # リーチ: 月+1.5%
+    growth_pa = past_growth.get("profile_access", 0.01)     # PA: 月+1% （伸びづらい）
+    growth_clicks = past_growth.get("link_clicks", 0.02)    # クリック: 月+2%
+    growth_pa_rate = past_growth.get("profile_access_rate", 0.003)  # PA率: 月+0.3%
     growth_lc_rate = past_growth.get("link_click_rate", 0.01)       # クリック率: 月+1%
     growth_cv_rate = past_growth.get("cv_rate", 0.01)               # CV率: 月+1%
 
     # マイナス成長はデフォルト値に置き換え（改善を前提）
-    growth_reach = max(growth_reach, 0.01)
-    growth_pa = max(growth_pa, 0.01)
-    growth_clicks = max(growth_clicks, 0.01)
+    # PAは伸びづらいため、マイナス成長の下限も抑えめ
+    growth_reach = max(growth_reach, 0.005)     # 最低月+0.5%
+    growth_pa = max(growth_pa, 0.003)           # 最低月+0.3%（実データ反映）
+    growth_clicks = max(growth_clicks, 0.01)    # 最低月+1%
     growth_pa_rate = max(growth_pa_rate, 0.0)
     growth_lc_rate = max(growth_lc_rate, 0.0)
     growth_cv_rate = max(growth_cv_rate, 0.0)
@@ -302,17 +306,23 @@ def reverse_calculate_targets(
         needed_clicks = projected_clicks
     else:
         # 実数成長だけでは不足 → 不足分を「実数70% + 転換率30%」で分担
+        # 実数ブーストは伸びやすさに応じて配分（PAは伸びづらいので控えめ）
         shortfall = target_cv / max(projected_cv_from_growth, 0.01)
 
-        # 実数側の追加成長（70%の重み）
-        volume_boost = shortfall ** 0.7
+        # 実数側の追加成長（70%の重み） = shortfall ^ 0.7
+        volume_boost_base = shortfall ** 0.7
+        # 指標別の伸びやすさ係数（実データ反映: PAは控えめ）
+        volume_boost_reach = volume_boost_base ** 1.0      # 標準
+        volume_boost_pa = volume_boost_base ** 0.7         # PAは70%のペースで抑制（伸びづらい）
+        volume_boost_clicks = volume_boost_base ** 1.2     # クリックは1.2倍ペース（伸ばしやすい）
+
         # 転換率側の追加改善（30%の重み）
         rate_boost = shortfall ** 0.3
 
-        # 実数をブースト
-        needed_reach = projected_reach * volume_boost
-        needed_pa = projected_pa * volume_boost
-        needed_clicks = projected_clicks * volume_boost
+        # 実数をブースト（PAは控えめ）
+        needed_reach = projected_reach * volume_boost_reach
+        needed_pa = projected_pa * volume_boost_pa
+        needed_clicks = projected_clicks * volume_boost_clicks
 
         # 転換率を控えめにブースト（ベンチマーク上限を超えない）
         max_rate_boost = {"3ヶ月後": 1.2, "6ヶ月後": 1.4, "12ヶ月後": 1.6}.get(period, 1.4)
@@ -321,19 +331,23 @@ def reverse_calculate_targets(
         projected_lc_rate = min(projected_lc_rate * rate_boost, bm_lc_rate * 1.1)
         projected_cv_rate = min(projected_cv_rate * rate_boost, bm_cv_rate * 1.1)
 
-        # 逆算で整合性を取る
+        # 逆算で整合性を取る（PAが足りなければリーチで補う）
         needed_clicks = max(needed_clicks, target_cv / (projected_cv_rate / 100))
         needed_pa = max(needed_pa, needed_clicks / (projected_lc_rate / 100))
         needed_reach = max(needed_reach, needed_pa / (projected_pa_rate / 100))
 
     # --- Step 4: 各実数の成長上限で制限（指標ごとに異なる上限） ---
-    # 94社・388ヶ月の実データに基づく累積成長率:
-    # - PA  アカウント単位実績: 3mo Q3=×1.43, Q90=×2.01 / 6mo Q3=×1.64, Q90=×2.95
-    #   → Q3〜Q90の間を上限に設定（成功アカウントが届く水準）
-    # - リーチ: 着実に伸びる（PA より少し伸びやすい）
-    # - クリック: 施策次第で大きく伸びる（Q3: 3mo=2.0x, 6mo=4.0x）
+    # 94社の実データに基づく累積成長率（アカウント単位）:
+    # - リーチ: 3mo Q3=×1.44, Q90=×2.28 → 伸びやすい
+    # - PA:   3mo 中央値×1.08, Q3=×1.26, Q90=×1.64
+    #         6mo 中央値×1.18, Q3=×1.54, Q90=×2.67
+    #         ※半数以上のアカウントが横ばい or 低下 → 最も伸びづらい
+    # - クリック: 3mo Q3=×2.0 → 施策次第で大きく伸びる
+    #
+    # 上限はQ3〜Q90の間（成功アカウントが届く水準）:
     max_growth_reach = {"3ヶ月後": 1.5, "6ヶ月後": 2.0, "12ヶ月後": 3.0}.get(period, 2.0)
-    max_growth_pa = {"3ヶ月後": 1.5, "6ヶ月後": 2.0, "12ヶ月後": 3.0}.get(period, 2.0)
+    # PA実データ厳格: 3mo=Q3×1.26〜Q90×1.64、6mo=Q3×1.54〜Q90×2.67
+    max_growth_pa = {"3ヶ月後": 1.3, "6ヶ月後": 1.6, "12ヶ月後": 2.2}.get(period, 1.6)
     max_growth_clicks = {"3ヶ月後": 2.0, "6ヶ月後": 3.0, "12ヶ月後": 5.0}.get(period, 3.0)
 
     # 各実数に上限適用
