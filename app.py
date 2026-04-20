@@ -1503,8 +1503,34 @@ def _parse_vertical_csv(df) -> list:
                     break
 
     row_followers = _find_row(["フォロワー数", "フォロワー"], section="実数")
+    # 「フォロワー数」カテゴリ下の「合計」行を探す（アクティブハウス/アールグラフ式）
+    if row_followers is None or row_followers.get("met_clean") == "フォロワー":
+        for r in row_map:
+            if r["idx"] in excluded_idx or r["idx"] in variable_idx:
+                continue
+            if "フォロワー" in r["cat"] and r["met_clean"] in ("合計", "フォロワー数"):
+                row_followers = r
+                break
+
     row_eng = _find_row(["ENG数", "ENG"], section="実数")
+    # 「ENG数」カテゴリ下の「合計」行
+    if row_eng is None:
+        for r in row_map:
+            if r["idx"] in excluded_idx or r["idx"] in variable_idx:
+                continue
+            if "ENG" in r["cat"] and r["met_clean"] == "合計":
+                row_eng = r
+                break
+
     row_views = _find_row(["ビュー数", "ビュー"], section="実数")
+    # 「ビュー」カテゴリ下の「合計」行
+    if row_views is None:
+        for r in row_map:
+            if r["idx"] in excluded_idx or r["idx"] in variable_idx:
+                continue
+            if "ビュー" in r["cat"] and r["met_clean"] == "合計":
+                row_views = r
+                break
 
     # ∟プロフ行がリンククリックの子かプロフアクセスの子か判別
     # → リンククリック行の直後にあれば子行
@@ -1522,12 +1548,20 @@ def _parse_vertical_csv(df) -> list:
         ("∟ストーリーズ/ハイライト", row_clicks_story),
         ("CV数", row_cv),
         ("フォロワー数", row_followers),
+        ("ENG数", row_eng),
+        ("ビュー数", row_views),
     ]
 
     check_html = '<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;">'
     for label, found in check_items:
         if found:
-            src = f'行{found["idx"]}: {found["met"]}'
+            # カテゴリ×指標の組み合わせで表示（ソース明確化）
+            src_parts = []
+            if found.get("cat"):
+                src_parts.append(found["cat"])
+            if found.get("met"):
+                src_parts.append(found["met"])
+            src = f'行{found["idx"]}: {" / ".join(src_parts)}' if src_parts else f'行{found["idx"]}'
             check_html += f'<div style="background:#1a3020;border:1px solid #2a5a3a;border-radius:8px;padding:6px 12px;font-size:0.85rem;"><span style="color:#5aba6f;">✓</span> <span style="color:#c0c8d4;">{label}</span><br><span style="color:#6a8a6a;font-size:0.75rem;">{src}</span></div>'
         else:
             check_html += f'<div style="background:#3a2020;border:1px solid #5a3030;border-radius:8px;padding:6px 12px;font-size:0.85rem;"><span style="color:#ba5a5a;">✗</span> <span style="color:#c0c8d4;">{label}</span><br><span style="color:#8a6060;font-size:0.75rem;">未検出</span></div>'
