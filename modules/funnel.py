@@ -237,20 +237,69 @@ def reverse_calculate_targets(
     targets = FunnelTargets(target_cv=target_cv, period=period)
     period_months = {"3ヶ月後": 3, "6ヶ月後": 6, "12ヶ月後": 12}.get(period, 6)
 
-    # 過去成長率を取得
+    # 過去成長率を取得（業界平均=94社の過去運用事例）
     past_growth = benchmark_rates.get("_past_growth", {}) if benchmark_rates else {}
 
-    # 各指標の月次成長率（過去事例 or デフォルト）
-    # 94社実データに基づく現実的なデフォルト:
-    # - リーチ: 3ヶ月中央値×1.04 → 月+1.3%相当
-    # - PA:    3ヶ月中央値×1.08 だが51%が横ばい/低下 → 月+1%（控えめ）
-    # - クリック: 施策次第で大きく伸びる → 月+2%
-    growth_reach = past_growth.get("reach", 0.015)          # リーチ: 月+1.5%
-    growth_pa = past_growth.get("profile_access", 0.01)     # PA: 月+1% （伸びづらい）
-    growth_clicks = past_growth.get("link_clicks", 0.02)    # クリック: 月+2%
-    growth_pa_rate = past_growth.get("profile_access_rate", 0.003)  # PA率: 月+0.3%
-    growth_lc_rate = past_growth.get("link_click_rate", 0.01)       # クリック率: 月+1%
-    growth_cv_rate = past_growth.get("cv_rate", 0.01)               # CV率: 月+1%
+    # --- 成長率の優先順位 ---
+    # 1. アカウント固有の成長率（4ヶ月以上の自社データから算出・信頼性高）
+    # 2. 業界平均の過去運用事例成長率（94社から算出）
+    # 3. 実データに基づくデフォルト値（中央値レベル）
+    def _blend_growth(account_val: float, industry_val: float, default_val: float,
+                       account_months: int) -> float:
+        """成長率を3ソースから加重ブレンド
+        - 月数が多いほどアカウント固有を重視
+        - マイナス成長は業界平均で補正（改善前提）
+        - 異常値（月±30%超）は業界平均で補正
+        """
+        # アカウント固有がない場合
+        if account_val is None:
+            return industry_val if industry_val is not None else default_val
+
+        # 異常値・マイナス成長は業界平均で補正
+        if account_val < -0.1 or account_val > 0.3:
+            # ±10%〜30%の範囲外 → 業界平均を優先
+            account_val = industry_val if industry_val is not None else default_val
+
+        # データ月数に応じて加重（多いほどアカウント固有を信頼）
+        # 4ヶ月: 40% / 6ヶ月: 60% / 12ヶ月以上: 80%
+        account_weight = min(0.8, max(0.4, (account_months - 3) * 0.1))
+        industry_weight = 1.0 - account_weight
+        industry_val = industry_val if industry_val is not None else default_val
+        return account_val * account_weight + industry_val * industry_weight
+
+    account_months = current_metrics.account_growth_months
+
+    # 94社実データに基づく現実的なデフォルト値
+    growth_reach = _blend_growth(
+        current_metrics.account_growth_reach,
+        past_growth.get("reach"),
+        0.015, account_months,
+    )
+    growth_pa = _blend_growth(
+        current_metrics.account_growth_pa,
+        past_growth.get("profile_access"),
+        0.01, account_months,
+    )
+    growth_clicks = _blend_growth(
+        current_metrics.account_growth_clicks,
+        past_growth.get("link_clicks"),
+        0.02, account_months,
+    )
+    growth_pa_rate = _blend_growth(
+        current_metrics.account_growth_pa_rate,
+        past_growth.get("profile_access_rate"),
+        0.003, account_months,
+    )
+    growth_lc_rate = _blend_growth(
+        current_metrics.account_growth_lc_rate,
+        past_growth.get("link_click_rate"),
+        0.01, account_months,
+    )
+    growth_cv_rate = _blend_growth(
+        current_metrics.account_growth_cv_rate,
+        past_growth.get("cv_rate"),
+        0.01, account_months,
+    )
 
     # マイナス成長はデフォルト値に置き換え（改善を前提）
     # PAは伸びづらいため、マイナス成長の下限も抑えめ
