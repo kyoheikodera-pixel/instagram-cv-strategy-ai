@@ -339,10 +339,16 @@ def reverse_calculate_targets(
     projected_lc_rate = _project_rate(current_metrics.link_click_rate, growth_lc_rate, bm_lc_rate)
     projected_cv_rate = _project_rate(current_metrics.cv_rate, growth_cv_rate, bm_cv_rate)
 
-    # 最低保証 + ベンチマーク上限（他社Q3を超える目標は非現実的）
-    projected_pa_rate = min(max(projected_pa_rate, 1.0), bm_pa_rate * 1.1)
-    projected_lc_rate = min(max(projected_lc_rate, 1.0), bm_lc_rate * 1.1)
-    projected_cv_rate = min(max(projected_cv_rate, 0.5), bm_cv_rate * 1.1)
+    # 最低保証 + ベンチマーク上限
+    # 重要: 現状値がベンチマーク上限を既に超えている場合は、現状値を維持する
+    # （優秀なアカウントの数値を無理に下げない）
+    pa_rate_cap = max(bm_pa_rate * 1.1, current_metrics.profile_access_rate)
+    lc_rate_cap = max(bm_lc_rate * 1.1, current_metrics.link_click_rate)
+    cv_rate_cap = max(bm_cv_rate * 1.1, current_metrics.cv_rate)
+
+    projected_pa_rate = min(max(projected_pa_rate, 1.0), pa_rate_cap)
+    projected_lc_rate = min(max(projected_lc_rate, 1.0), lc_rate_cap)
+    projected_cv_rate = min(max(projected_cv_rate, 0.5), cv_rate_cap)
 
     # --- Step 3: CV目標から逆算（実数成長ベース） ---
     # まず実数成長でどこまでCVが出るか計算
@@ -376,9 +382,9 @@ def reverse_calculate_targets(
         # 転換率を控えめにブースト（ベンチマーク上限を超えない）
         max_rate_boost = {"3ヶ月後": 1.2, "6ヶ月後": 1.4, "12ヶ月後": 1.6}.get(period, 1.4)
         rate_boost = min(rate_boost, max_rate_boost)
-        projected_pa_rate = min(projected_pa_rate * rate_boost, bm_pa_rate * 1.1)
-        projected_lc_rate = min(projected_lc_rate * rate_boost, bm_lc_rate * 1.1)
-        projected_cv_rate = min(projected_cv_rate * rate_boost, bm_cv_rate * 1.1)
+        projected_pa_rate = min(projected_pa_rate * rate_boost, pa_rate_cap)
+        projected_lc_rate = min(projected_lc_rate * rate_boost, lc_rate_cap)
+        projected_cv_rate = min(projected_cv_rate * rate_boost, cv_rate_cap)
 
         # 逆算で整合性を取る（PAが足りなければリーチで補う）
         needed_clicks = max(needed_clicks, target_cv / (projected_cv_rate / 100))
@@ -401,17 +407,20 @@ def reverse_calculate_targets(
 
     # --- PAの絶対天井（3つの条件の最小値） ---
     # 条件1: 成長率上限（現状 × max_growth_pa）
-    # 条件2: PA率上限（リーチ × PA率Q90の1.1倍）= リーチに対する率上限
+    # 条件2: PA率上限（リーチ × PA率Q90の1.1倍、ただし現状PA率以上を維持）
     # 条件3: ハードキャップ（PA率 25%を絶対超えない = 実データ最大値32%以下）
     def _calc_pa_ceiling(reach_val):
         caps = []
         # 条件1: 成長率上限
         if current_metrics.avg_profile_access > 0:
             caps.append(current_metrics.avg_profile_access * max_growth_pa)
-        # 条件2: リーチに対するPA率上限（ベンチマーク×1.1）
-        caps.append(reach_val * (bm_pa_rate * 1.1 / 100))
+        # 条件2: リーチに対するPA率上限（ベンチマーク×1.1、現状値超過時は現状値ベース）
+        pa_rate_ceiling = max(bm_pa_rate * 1.1, current_metrics.profile_access_rate) / 100
+        caps.append(reach_val * pa_rate_ceiling)
         # 条件3: ハードキャップ（PA率25%、工務店業界の実データ最大に基づく）
-        caps.append(reach_val * 0.25)
+        # ただし現状が25%超なら現状値を維持
+        hard_cap_rate = max(0.25, current_metrics.profile_access_rate / 100)
+        caps.append(reach_val * hard_cap_rate)
         return min(caps) if caps else float("inf")
 
     # 各実数に上限適用
@@ -426,6 +435,26 @@ def reverse_calculate_targets(
     pa_from_reach = needed_reach * (projected_pa_rate / 100)
     pa_from_reach = min(pa_from_reach, _calc_pa_ceiling(needed_reach))
     needed_pa = max(needed_pa, pa_from_reach)
+
+    # PA率の下落を防ぐ（現状PA率を維持）
+    # リーチ拡大時にPAが天井で抑えられるとPA率が希釈される。
+    # PAが天井に達している場合はリーチを抑えて現状PA率を維持する。
+    if current_metrics.profile_access_rate > 0:
+        pa_ceiling_val = _calc_pa_ceiling(needed_reach)
+        # 現状PA率を維持できる最大リーチを算出
+        pa_rate_maintain = current_metrics.profile_access_rate / 100
+        if pa_rate_maintain > 0:
+            # 現状PA率×1.0 でPA天井まで使い切る
+            # → リーチ = PA天井 / 現状PA率
+            max_reach_for_pa_rate = pa_ceiling_val / pa_rate_maintain
+            # リーチを抑えてPA率希釈を防ぐ（ただしリーチ下限=現状維持）
+            min_reach = current_metrics.avg_reach
+            needed_reach = max(min_reach, min(needed_reach, max_reach_for_pa_rate))
+        # PAをリーチ×現状PA率で再計算（下限確保）
+        pa_min_from_current_rate = needed_reach * (current_metrics.profile_access_rate / 100)
+        pa_min_from_current_rate = min(pa_min_from_current_rate, _calc_pa_ceiling(needed_reach))
+        needed_pa = max(needed_pa, pa_min_from_current_rate)
+
     # 最終PA天井を再度適用（max() で上がった分を抑える）
     needed_pa = min(needed_pa, _calc_pa_ceiling(needed_reach))
 
@@ -464,16 +493,41 @@ def calculate_improvement_needed(
     gaps = {}
 
     def _gap(current_val, target_val, label):
+        # CV関連は「件数」ベースで緩く判定（CV現状0でも達成可能と扱う場合あり）
+        is_cv_metric = "CV" in label
+
         if current_val == 0:
+            # CV: 目標1件なら「努力目標」、2件以上で「要検討」
+            if is_cv_metric and target_val <= 1:
+                feasibility = "努力目標"
+            elif is_cv_metric and target_val <= 2:
+                feasibility = "努力目標"
+            else:
+                feasibility = "要検討"
             return {"label": label, "current": current_val, "target": target_val,
-                    "gap": target_val, "gap_pct": float("inf"), "feasibility": "要検討"}
+                    "gap": target_val, "gap_pct": float("inf"), "feasibility": feasibility}
+
         pct = (target_val - current_val) / current_val * 100
-        if pct <= 20:
-            feasibility = "達成可能"
-        elif pct <= 50:
-            feasibility = "努力目標"
+        # 指標別の閾値調整
+        # - 実数（リーチ/PA/クリック/CV）: 緩めに判定（50%/100%/それ以上）
+        # - 転換率: 厳しめに判定（20%/50%/それ以上）
+        if is_cv_metric or "リーチ" in label or ("プロフアクセス" in label and "率" not in label) \
+                or ("リンククリック" in label and "率" not in label):
+            # 実数系
+            if pct <= 50:
+                feasibility = "達成可能"
+            elif pct <= 100:
+                feasibility = "努力目標"
+            else:
+                feasibility = "要検討"
         else:
-            feasibility = "要検討"
+            # 率系
+            if pct <= 20:
+                feasibility = "達成可能"
+            elif pct <= 50:
+                feasibility = "努力目標"
+            else:
+                feasibility = "要検討"
         return {"label": label, "current": round(current_val, 2), "target": round(target_val, 2),
                 "gap": round(target_val - current_val, 2), "gap_pct": round(pct, 1), "feasibility": feasibility}
 
