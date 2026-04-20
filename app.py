@@ -1350,35 +1350,56 @@ def _parse_vertical_csv(df) -> list:
         st.warning("3ヶ月未満のデータのため、精度が低い可能性があります。3ヶ月以上のデータを推奨します。")
         return []
 
-    # --- Step 2: カテゴリ列・指標列を特定（Unnamed対応） ---
-    # カテゴリ列: 「実数値」「変数」「施策」が入る列
-    # 指標列: 「リーチ数」「フォロワー数」等が入る列
-    cat_col = None
-    met_col = None
+    # --- Step 2: カテゴリ列・指標列を特定（複数FMT対応） ---
+    # カテゴリ列: 「目標/実数値/本数/フォロワー/ビュー/リーチ/ENG/保存/プロフ/リンククリック/CV/歩留/変数/施策」等が入る列
+    # 指標列: 「合計/リーチ数/プロフアクセス数/リンククリック数/CV件数」等が入る列（階層行 ∟〜 を含む）
+    CAT_KEYWORDS = ["目標", "実数値", "本数", "フォロワー", "ビュー", "リーチ", "ENG", "保存",
+                    "プロフ", "リンククリック", "CV", "歩留", "変数", "施策", "最終数値", "差分"]
+    MET_KEYWORDS = ["合計", "フィード計", "リール計", "平均", "リーチ合計", "プロフアクセス数",
+                    "リンククリック数", "CV数", "CV件数", "フィード投稿数", "リール投稿数",
+                    "月次増加", "エリア内", "フィード平均", "リール平均", "ストーリーズ"]
+
+    # 各列のキーワードヒット数を計算
+    col_scores = {}
     for c in col_names:
         if c in month_cols:
             continue
-        # Unnamed列でも中身にカテゴリキーワードがあればカテゴリ列
         col_values = [str(v).strip() for v in df[c].dropna().tolist()]
-        has_category_kw = any(kw in v for v in col_values for kw in ["実数値", "変数", "施策"])
-        has_metric_kw = any(kw in v for v in col_values for kw in ["リーチ", "フォロワー", "プロフ", "クリック", "CV", "ENG", "ビュー"])
+        # 各カテゴリキーワードが含まれるセル数
+        cat_hits = sum(1 for v in col_values for kw in CAT_KEYWORDS if kw in v)
+        met_hits = sum(1 for v in col_values for kw in MET_KEYWORDS if kw in v)
+        # 「∟」で始まる階層行は指標列の特徴
+        hierarchy_hits = sum(1 for v in col_values if v.startswith(("∟", "└", "├")))
+        col_scores[c] = {"cat": cat_hits, "met": met_hits + hierarchy_hits * 2}
 
-        if cat_col is None and has_category_kw:
+    # カテゴリ列 = cat_hitsが最大、指標列 = met_hitsが最大（カテゴリ列とは別）
+    cat_col = None
+    best_cat_score = 0
+    for c, scores in col_scores.items():
+        if scores["cat"] > best_cat_score:
+            best_cat_score = scores["cat"]
             cat_col = c
-        elif met_col is None and has_metric_kw:
+
+    met_col = None
+    best_met_score = 0
+    for c, scores in col_scores.items():
+        if c == cat_col:
+            continue
+        if scores["met"] > best_met_score:
+            best_met_score = scores["met"]
             met_col = c
 
-    # フォールバック
-    if cat_col is None:
-        cat_col = col_names[0]
+    # フォールバック: 非月列から順に割り当て
+    non_month = [c for c in col_names if c not in month_cols and "unnamed" not in str(c).lower()]
+    if cat_col is None and non_month:
+        cat_col = non_month[0]
     if met_col is None:
-        # カテゴリ列の次の非月列を指標列とする
-        for c in col_names:
-            if c != cat_col and c not in month_cols and "unnamed" not in str(c).lower():
+        for c in non_month:
+            if c != cat_col:
                 met_col = c
                 break
         if met_col is None:
-            met_col = col_names[1] if len(col_names) > 1 else cat_col
+            met_col = cat_col
 
     # --- Step 3: 全行をパースして行マップを構築 ---
     row_map = []
@@ -1401,8 +1422,37 @@ def _parse_vertical_csv(df) -> list:
         except (ValueError, TypeError):
             return 0.0
 
-    def _find_row(keywords: list, section: str = None) -> dict | None:
-        """指標列のキーワードで行を検索。sectionは親カテゴリ（実数値/変数）"""
+    # 目標セクションの行範囲を特定（「目標」「(後伸び含む)」「最終数値」「差分」カテゴリ行）
+    # これらのセクションの値は実績ではなく目標値
+    EXCLUDE_SECTIONS = ["目標", "最終数値", "差分", "(後伸び", "（後伸び"]
+    excluded_idx = set()
+    current_section_excluded = False
+    for r in row_map:
+        cat = r["cat"]
+        if cat:
+            # 新しいカテゴリが始まったら判定更新
+            current_section_excluded = any(ex in cat for ex in EXCLUDE_SECTIONS)
+        if current_section_excluded:
+            excluded_idx.add(r["idx"])
+
+    # 変数セクション（歩留変数・ENG率・プロフアクセス率等）は実数として取らない
+    variable_idx = set()
+    current_section_variable = False
+    for r in row_map:
+        cat = r["cat"]
+        if cat:
+            current_section_variable = "変数" in cat or "歩留" in cat
+        if current_section_variable:
+            variable_idx.add(r["idx"])
+
+    def _find_row(keywords: list, section: str = "実数") -> dict | None:
+        """指標列のキーワードで行を検索
+
+        section:
+          "実数": 目標セクション・変数セクション・差分セクションを除外（実績のみ）
+          "変数": 変数セクション（歩留変数）のみ対象
+          None: 全行対象
+        """
         for kw in keywords:
             kw_clean = kw.lstrip("∟└─├　 ").strip()
             kw_base = kw_clean.rstrip("数件率")
@@ -1411,11 +1461,13 @@ def _parse_vertical_csv(df) -> list:
                 mc_base = mc.rstrip("数件率")
                 # 完全一致 or ベース一致
                 if mc == kw_clean or mc_base == kw_base:
-                    # セクションフィルタ（変数セクションの値を実数として取らないように）
-                    if section and r["cat"] and section not in r["cat"] and r["cat"] not in ("", section):
-                        # カテゴリが指定セクションと異なる場合はスキップ
-                        # ただし空カテゴリ（前の行のカテゴリを継承）は許可
-                        continue
+                    # セクションフィルタ
+                    if section == "実数":
+                        if r["idx"] in excluded_idx or r["idx"] in variable_idx:
+                            continue
+                    elif section == "変数":
+                        if r["idx"] not in variable_idx:
+                            continue
                     return r
         return None
 
@@ -1425,12 +1477,31 @@ def _parse_vertical_csv(df) -> list:
         return _safe_num(row_data["row"].get(month_col, 0))
 
     # --- Step 4: 各指標の行を事前に特定（1回だけ検索） ---
-    row_reach = _find_row(["リーチ数", "リーチ"], section="実数")
+    row_reach = _find_row(["リーチ数", "リーチ合計", "リーチ"], section="実数")
+    # リーチ合計行を優先（「リーチ合計」vs 集約列としての「リーチ」）
+    if row_reach is None or row_reach.get("met_clean") == "リーチ":
+        # 「リーチ」カテゴリ行で指標が「合計」の行を探す
+        for r in row_map:
+            if "リーチ" in r["cat"] and r["met_clean"] == "合計":
+                if r["idx"] not in excluded_idx and r["idx"] not in variable_idx:
+                    row_reach = r
+                    break
+
     row_pa = _find_row(["プロフアクセス数", "プロフアクセス"], section="実数")
     row_clicks = _find_row(["リンククリック数", "リンククリック"], section="実数")
     row_clicks_prof = _find_row(["プロフ"], section=None)  # ∟プロフ（リンククリックの子行）
     row_clicks_story = _find_row(["ストーリーズ/ハイライト", "ストーリーズ", "ハイライト"], section=None)
-    row_cv = _find_row(["CV数", "CV件数", "CV"], section="実数")
+
+    # CV行検索: CV件数を最優先、「CV」カテゴリで∟子行のCV件数も探す
+    row_cv = _find_row(["CV件数", "CV数"], section="実数")
+    if row_cv is None:
+        # 「CV」を含むカテゴリ配下の行を探す（例: CV（LINE登録者）数）
+        for r in row_map:
+            if ("CV" in r["cat"]) and r["idx"] not in excluded_idx and r["idx"] not in variable_idx:
+                if "件" in r["met_clean"] or r["met_clean"] in ("合計", "CV"):
+                    row_cv = r
+                    break
+
     row_followers = _find_row(["フォロワー数", "フォロワー"], section="実数")
     row_eng = _find_row(["ENG数", "ENG"], section="実数")
     row_views = _find_row(["ビュー数", "ビュー"], section="実数")
